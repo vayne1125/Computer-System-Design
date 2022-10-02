@@ -1,0 +1,246 @@
+|clock
+reset => reset.IN2
+clk => clk.IN2
+q[0] <= seven_segment:seven_segment1.port1
+q[1] <= seven_segment:seven_segment1.port1
+q[2] <= seven_segment:seven_segment1.port1
+q[3] <= seven_segment:seven_segment1.port1
+q[4] <= seven_segment:seven_segment1.port1
+q[5] <= seven_segment:seven_segment1.port1
+q[6] <= seven_segment:seven_segment1.port1
+q[7] <= seven_segment:seven_segment2.port1
+q[8] <= seven_segment:seven_segment2.port1
+q[9] <= seven_segment:seven_segment2.port1
+q[10] <= seven_segment:seven_segment2.port1
+q[11] <= seven_segment:seven_segment2.port1
+q[12] <= seven_segment:seven_segment2.port1
+q[13] <= seven_segment:seven_segment2.port1
+q[14] <= seven_segment:seven_segment3.port1
+q[15] <= seven_segment:seven_segment3.port1
+q[16] <= seven_segment:seven_segment3.port1
+q[17] <= seven_segment:seven_segment3.port1
+q[18] <= seven_segment:seven_segment3.port1
+q[19] <= seven_segment:seven_segment3.port1
+q[20] <= seven_segment:seven_segment3.port1
+q[21] <= seven_segment:seven_segment4.port1
+q[22] <= seven_segment:seven_segment4.port1
+q[23] <= seven_segment:seven_segment4.port1
+q[24] <= seven_segment:seven_segment4.port1
+q[25] <= seven_segment:seven_segment4.port1
+q[26] <= seven_segment:seven_segment4.port1
+q[27] <= seven_segment:seven_segment4.port1
+s[0] <= s[0].DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s[1].DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s[2].DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s[3].DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= s[4].DB_MAX_OUTPUT_PORT_TYPE
+s[5] <= s[5].DB_MAX_OUTPUT_PORT_TYPE
+s[6] <= s[6].DB_MAX_OUTPUT_PORT_TYPE
+s[7] <= s[7].DB_MAX_OUTPUT_PORT_TYPE
+s[8] <= s[8].DB_MAX_OUTPUT_PORT_TYPE
+s[9] <= s[9].DB_MAX_OUTPUT_PORT_TYPE
+s[10] <= s[10].DB_MAX_OUTPUT_PORT_TYPE
+s[11] <= s[11].DB_MAX_OUTPUT_PORT_TYPE
+s[12] <= s[12].DB_MAX_OUTPUT_PORT_TYPE
+s[13] <= s[13].DB_MAX_OUTPUT_PORT_TYPE
+s[14] <= seven_segment:seven_segment4.port0
+
+
+|clock|counter_BCD_min:counter_BCD_min1
+reset => reset.IN2
+clk => clk.IN2
+q[0] <= <GND>
+q[1] <= <GND>
+q[2] <= <GND>
+q[3] <= <GND>
+q[4] <= <GND>
+q[5] <= <GND>
+q[6] <= <GND>
+q[7] <= <GND>
+q[8] <= <GND>
+q[9] <= <GND>
+q[10] <= <GND>
+q[11] <= <GND>
+q[12] <= <GND>
+q[13] <= <GND>
+s[0] <= counter_4bit_0_9:counter_4bit_0_9_1.port3
+s[1] <= counter_4bit_0_9:counter_4bit_0_9_1.port3
+s[2] <= counter_4bit_0_9:counter_4bit_0_9_1.port3
+s[3] <= counter_4bit_0_9:counter_4bit_0_9_1.port3
+s[4] <= counter_4bit_0_5:counter_4bit_0_5_1.port3
+s[5] <= counter_4bit_0_5:counter_4bit_0_5_1.port3
+s[6] <= counter_4bit_0_5:counter_4bit_0_5_1.port3
+s[7] <= counter_4bit_0_5:counter_4bit_0_5_1.port3
+carry_out <= counter_4bit_0_5:counter_4bit_0_5_1.port4
+
+
+|clock|counter_BCD_min:counter_BCD_min1|counter_4bit_0_9:counter_4bit_0_9_1
+reset => value.OUTPUTSELECT
+reset => value.OUTPUTSELECT
+reset => value.OUTPUTSELECT
+reset => value.OUTPUTSELECT
+clk => value[0]~reg0.CLK
+clk => value[1]~reg0.CLK
+clk => value[2]~reg0.CLK
+clk => value[3]~reg0.CLK
+carry_in => always0.IN1
+carry_in => value.OUTPUTSELECT
+carry_in => value.OUTPUTSELECT
+carry_in => value.OUTPUTSELECT
+carry_in => value.OUTPUTSELECT
+value[0] <= value[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[1] <= value[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[2] <= value[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[3] <= value[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= always0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|counter_BCD_min:counter_BCD_min1|counter_4bit_0_5:counter_4bit_0_5_1
+reset => value.OUTPUTSELECT
+reset => value.OUTPUTSELECT
+reset => value.OUTPUTSELECT
+reset => value.OUTPUTSELECT
+clk => value[0]~reg0.CLK
+clk => value[1]~reg0.CLK
+clk => value[2]~reg0.CLK
+clk => value[3]~reg0.CLK
+carry_in => always0.IN1
+carry_in => value.OUTPUTSELECT
+carry_in => value.OUTPUTSELECT
+carry_in => value.OUTPUTSELECT
+carry_in => value.OUTPUTSELECT
+value[0] <= value[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[1] <= value[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[2] <= value[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[3] <= value[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= always0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|counter_BCD_hour:counter_BCD_hour1
+reset => reset.IN2
+clk => clk.IN2
+q[0] <= <GND>
+q[1] <= <GND>
+q[2] <= <GND>
+q[3] <= <GND>
+q[4] <= <GND>
+q[5] <= <GND>
+q[6] <= <GND>
+q[7] <= <GND>
+q[8] <= <GND>
+q[9] <= <GND>
+q[10] <= <GND>
+q[11] <= <GND>
+q[12] <= <GND>
+q[13] <= <GND>
+s[0] <= counter_4bit_0_9_0_3:counter_4bit_0_9_0_3_1.port3
+s[1] <= counter_4bit_0_9_0_3:counter_4bit_0_9_0_3_1.port3
+s[2] <= counter_4bit_0_9_0_3:counter_4bit_0_9_0_3_1.port3
+s[3] <= counter_4bit_0_9_0_3:counter_4bit_0_9_0_3_1.port3
+s[4] <= counter_4bit_0_2:counter_4bit_0_2_1.port3
+s[5] <= counter_4bit_0_2:counter_4bit_0_2_1.port3
+s[6] <= counter_4bit_0_2:counter_4bit_0_2_1.port3
+s[7] <= counter_4bit_0_2:counter_4bit_0_2_1.port3
+
+
+|clock|counter_BCD_hour:counter_BCD_hour1|counter_4bit_0_9_0_3:counter_4bit_0_9_0_3_1
+reset => value.OUTPUTSELECT
+reset => value.OUTPUTSELECT
+reset => value.OUTPUTSELECT
+reset => value.OUTPUTSELECT
+clk => value[0]~reg0.CLK
+clk => value[1]~reg0.CLK
+clk => value[2]~reg0.CLK
+clk => value[3]~reg0.CLK
+carry_in => always0.IN1
+carry_in => always0.IN1
+carry_in => value.OUTPUTSELECT
+carry_in => value.OUTPUTSELECT
+carry_in => value.OUTPUTSELECT
+carry_in => value.OUTPUTSELECT
+value[0] <= value[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[1] <= value[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[2] <= value[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[3] <= value[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+mode => always0.IN1
+mode => always0.IN1
+
+
+|clock|counter_BCD_hour:counter_BCD_hour1|counter_4bit_0_2:counter_4bit_0_2_1
+reset => value.OUTPUTSELECT
+reset => value.OUTPUTSELECT
+reset => value.OUTPUTSELECT
+reset => value.OUTPUTSELECT
+clk => value[0]~reg0.CLK
+clk => value[1]~reg0.CLK
+clk => value[2]~reg0.CLK
+clk => value[3]~reg0.CLK
+carry_in => always0.IN1
+carry_in => value.OUTPUTSELECT
+carry_in => value.OUTPUTSELECT
+carry_in => value.OUTPUTSELECT
+carry_in => value.OUTPUTSELECT
+value[0] <= value[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[1] <= value[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[2] <= value[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[3] <= value[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+mode <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|seven_segment:seven_segment1
+A[0] => Decoder0.IN3
+A[1] => Decoder0.IN2
+A[2] => Decoder0.IN1
+A[3] => Decoder0.IN0
+y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|seven_segment:seven_segment2
+A[0] => Decoder0.IN3
+A[1] => Decoder0.IN2
+A[2] => Decoder0.IN1
+A[3] => Decoder0.IN0
+y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|seven_segment:seven_segment3
+A[0] => Decoder0.IN3
+A[1] => Decoder0.IN2
+A[2] => Decoder0.IN1
+A[3] => Decoder0.IN0
+y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|seven_segment:seven_segment4
+A[0] => Decoder0.IN3
+A[1] => Decoder0.IN2
+A[2] => Decoder0.IN1
+A[3] => Decoder0.IN0
+y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

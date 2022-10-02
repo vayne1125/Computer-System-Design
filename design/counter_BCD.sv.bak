@@ -1,0 +1,12 @@
+`timescale 1ns/10ps
+module counter_BCD(
+	input reset,			//重置
+	input clk,
+	output logic [2:0] q //輸出
+);
+
+always_ff @ (posedge clk)
+	if(reset) q <= #1 0;
+	else q <= #1 q +1;
+	
+endmodule

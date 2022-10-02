@@ -1,0 +1,29 @@
+`timescale 1ns/10ps
+module counter_4bit_0_9(
+	input reset,					//重置
+	input clk,						//時脈
+	input carry_in, 				//進位輸入
+	output logic [3:0] value, 	//輸出
+	output logic carry_out 		//進位輸出
+);
+
+	always_ff @ (posedge clk)
+		begin
+			if(reset)
+				value <= #1 0;
+			else if(value == 4'd9)
+				value <= #1 0;
+			else
+				value <= #1 value + carry_in;
+		end
+		
+	always_ff @ (posedge clk)
+	begin
+		if(reset)
+			carry_out <= #1 0;
+		else if(value == 4'd9)
+			carry_out <= #1 1;
+		else
+			carry_out <= #1 0;
+	end
+endmodule

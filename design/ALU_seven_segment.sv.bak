@@ -1,0 +1,15 @@
+module ALU_seven_segment(
+	input [3:0] A,			//輸入
+	input [3:0] B,
+	input op, 				//控制+-
+	output logic [3:0] S //輸出
+);
+
+always_comb
+begin
+	if(op == 0)    //op = 0，為加法
+		S = A + B;  //op = 1，為剪法
+	else 
+		S = A - B;
+end
+endmodule

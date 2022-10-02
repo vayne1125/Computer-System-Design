@@ -1,0 +1,22 @@
+`timescale 1ns/10ps
+module counter_4bit_0_2(
+	input reset,					//重置
+	input clk,						//時脈
+	input carry_in, 				//進位輸入
+	output logic [3:0] value, 	//輸出
+	output logic mode 		   //切換模式 當vale == 2時，mode = 1
+);
+
+	always_ff @ (posedge clk)
+		begin
+			if(reset)              //同步，如果reset 就把值歸0
+				value <= #1 0;
+			else if(value == 4'd2 && carry_in == 1) //數到2也把值歸0
+				value <= #1 0;
+			else if(carry_in == 1)
+				value <= #1 value + 1; //值加1
+		end
+		
+	assign mode = (value == 4'd2)?1:0; //當value = 2 且 mode = 1時
+	
+endmodule
