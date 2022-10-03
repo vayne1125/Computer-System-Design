@@ -10,10 +10,12 @@ quietly WaveActivateNextPane {} 0
 
 add wave -noupdate -divider {adder}
 
-add wave -noupdate -format logic	       /testbench/clock1/reset
-add wave -noupdate -format logic		/testbench/clock1/clk
-add wave -noupdate -format Literal -radix Binary 	/testbench/clock1/q
-add wave -noupdate -format Literal -radix Hexadecimal 	/testbench/clock1/s
+add wave -noupdate -format logic	       /testbench/counter_reg1/reset
+add wave -noupdate -format logic		   /testbench/counter_reg1/clk
+add wave -noupdate -format Literal -radix Unsigned 	/testbench/counter_reg1/load_w
+add wave -noupdate -format Literal -radix Unsigned 	/testbench/counter_reg1/a
+add wave -noupdate -format Literal -radix Unsigned 	/testbench/counter_reg1/b
+add wave -noupdate -format Literal -radix Unsigned 	/testbench/counter_reg1/q
 
 #add wave -noupdate -format Literal -radix Binary 	    /testbench/counter_81/seven_seg  
 #add wave -noupdate -format Literal -radix Unsigned 	/testbench/adder1/a
