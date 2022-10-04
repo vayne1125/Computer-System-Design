@@ -10,49 +10,49 @@
 # ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -sv -work work +incdir+C:/Users/Chia-Yu\ Wang/Desktop/Computer-System-Design/design {C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/seven_segment.sv}
+# vlog -sv -work work +incdir+D:/school/Computer-System-Design_HW/design {D:/school/Computer-System-Design_HW/design/seven_segment.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module seven_segment
 # 
 # Top level modules:
 # 	seven_segment
-# vlog -sv -work work +incdir+C:/Users/Chia-Yu\ Wang/Desktop/Computer-System-Design/design {C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_9.sv}
+# vlog -sv -work work +incdir+D:/school/Computer-System-Design_HW/design {D:/school/Computer-System-Design_HW/design/counter_4bit_0_9.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module counter_4bit_0_9
 # 
 # Top level modules:
 # 	counter_4bit_0_9
-# vlog -sv -work work +incdir+C:/Users/Chia-Yu\ Wang/Desktop/Computer-System-Design/design {C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_BCD_min.sv}
+# vlog -sv -work work +incdir+D:/school/Computer-System-Design_HW/design {D:/school/Computer-System-Design_HW/design/counter_BCD_min.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module counter_BCD_min
 # 
 # Top level modules:
 # 	counter_BCD_min
-# vlog -sv -work work +incdir+C:/Users/Chia-Yu\ Wang/Desktop/Computer-System-Design/design {C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_5.sv}
+# vlog -sv -work work +incdir+D:/school/Computer-System-Design_HW/design {D:/school/Computer-System-Design_HW/design/counter_4bit_0_5.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module counter_4bit_0_5
 # 
 # Top level modules:
 # 	counter_4bit_0_5
-# vlog -sv -work work +incdir+C:/Users/Chia-Yu\ Wang/Desktop/Computer-System-Design/design {C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_2.sv}
+# vlog -sv -work work +incdir+D:/school/Computer-System-Design_HW/design {D:/school/Computer-System-Design_HW/design/counter_4bit_0_2.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module counter_4bit_0_2
 # 
 # Top level modules:
 # 	counter_4bit_0_2
-# vlog -sv -work work +incdir+C:/Users/Chia-Yu\ Wang/Desktop/Computer-System-Design/design {C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_9_0_3.sv}
+# vlog -sv -work work +incdir+D:/school/Computer-System-Design_HW/design {D:/school/Computer-System-Design_HW/design/counter_4bit_0_9_0_3.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module counter_4bit_0_9_0_3
 # 
 # Top level modules:
 # 	counter_4bit_0_9_0_3
-# vlog -sv -work work +incdir+C:/Users/Chia-Yu\ Wang/Desktop/Computer-System-Design/design {C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_BCD_hour.sv}
+# vlog -sv -work work +incdir+D:/school/Computer-System-Design_HW/design {D:/school/Computer-System-Design_HW/design/counter_BCD_hour.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module counter_BCD_hour
 # 
 # Top level modules:
 # 	counter_BCD_hour
-# vlog -sv -work work +incdir+C:/Users/Chia-Yu\ Wang/Desktop/Computer-System-Design/design {C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/clock.sv}
+# vlog -sv -work work +incdir+D:/school/Computer-System-Design_HW/design {D:/school/Computer-System-Design_HW/design/clock.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module clock
 # 
@@ -66,24 +66,164 @@ do compile.do
 # Top level modules:
 # 	testbench
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module counter_reg
+# -- Compiling module RYG_light
+# ** Error: (vlog-3838) ../../design/RYG_light.sv(127): Variable 'R' written by continuous and procedural assignments. See ../../design/RYG_light.sv(17). 
+# 
+# ** Error: (vlog-3838) ../../design/RYG_light.sv(128): Variable 'Y' written by continuous and procedural assignments. See ../../design/RYG_light.sv(19). 
+# 
+# ** Error: (vlog-3838) ../../design/RYG_light.sv(129): Variable 'G' written by continuous and procedural assignments. See ../../design/RYG_light.sv(18). 
+# 
+# ** Error: (vlog-3838) ../../design/RYG_light.sv(130): Variable 'R' written by continuous and procedural assignments. See ../../design/RYG_light.sv(17). 
+# 
+# ** Error: (vlog-3838) ../../design/RYG_light.sv(131): Variable 'Y' written by continuous and procedural assignments. See ../../design/RYG_light.sv(19). 
+# 
+# ** Error: (vlog-3838) ../../design/RYG_light.sv(132): Variable 'G' written by continuous and procedural assignments. See ../../design/RYG_light.sv(18). 
+# 
+# ** Error: C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 7
+# C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../../design/RYG_light.sv"
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
 # 
 # Top level modules:
-# 	counter_reg
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RYG_light
+# ** Error: (vlog-7033) ../../design/RYG_light.sv(30): Variable 'tp' driven in a combinational block, may not be driven by any other process. See ../../design/RYG_light.sv(17).
+# 
+# ** Error: (vlog-7033) ../../design/RYG_light.sv(36): Variable 'tp' driven in a combinational block, may not be driven by any other process. See ../../design/RYG_light.sv(17).
+# 
+# ** Error: (vlog-7033) ../../design/RYG_light.sv(42): Variable 'tp' driven in a combinational block, may not be driven by any other process. See ../../design/RYG_light.sv(17).
+# 
+# ** Error: (vlog-7033) ../../design/RYG_light.sv(48): Variable 'tp' driven in a combinational block, may not be driven by any other process. See ../../design/RYG_light.sv(17).
+# 
+# ** Error: (vlog-7033) ../../design/RYG_light.sv(54): Variable 'tp' driven in a combinational block, may not be driven by any other process. See ../../design/RYG_light.sv(17).
+# 
+# ** Error: (vlog-7033) ../../design/RYG_light.sv(60): Variable 'tp' driven in a combinational block, may not be driven by any other process. See ../../design/RYG_light.sv(17).
+# 
+# ** Error: (vlog-7033) ../../design/RYG_light.sv(66): Variable 'tp' driven in a combinational block, may not be driven by any other process. See ../../design/RYG_light.sv(17).
+# 
+# ** Error: (vlog-7033) ../../design/RYG_light.sv(72): Variable 'tp' driven in a combinational block, may not be driven by any other process. See ../../design/RYG_light.sv(17).
+# 
+# ** Error: (vlog-7033) ../../design/RYG_light.sv(78): Variable 'tp' driven in a combinational block, may not be driven by any other process. See ../../design/RYG_light.sv(17).
+# 
+# ** Error: (vlog-7033) ../../design/RYG_light.sv(84): Variable 'tp' driven in a combinational block, may not be driven by any other process. See ../../design/RYG_light.sv(17).
+# 
+# ** Error: (vlog-7033) ../../design/RYG_light.sv(90): Variable 'tp' driven in a combinational block, may not be driven by any other process. See ../../design/RYG_light.sv(17).
+# 
+# ** Error: (vlog-7033) ../../design/RYG_light.sv(96): Variable 'tp' driven in a combinational block, may not be driven by any other process. See ../../design/RYG_light.sv(17).
+# 
+# ** Error: (vlog-7033) ../../design/RYG_light.sv(102): Variable 'tp' driven in a combinational block, may not be driven by any other process. See ../../design/RYG_light.sv(17).
+# 
+# ** Error: (vlog-7033) ../../design/RYG_light.sv(108): Variable 'tp' driven in a combinational block, may not be driven by any other process. See ../../design/RYG_light.sv(17).
+# 
+# ** Error: (vlog-7033) ../../design/RYG_light.sv(114): Variable 'tp' driven in a combinational block, may not be driven by any other process. See ../../design/RYG_light.sv(17).
+# 
+# ** Error: (vlog-7033) ../../design/RYG_light.sv(120): Variable 'tp' driven in a combinational block, may not be driven by any other process. See ../../design/RYG_light.sv(17).
+# 
+# ** Error: C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 7
+# C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../../design/RYG_light.sv"
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RYG_light
+# 
+# Top level modules:
+# 	RYG_light
 do sim.do
 # vsim -voptargs=+acc work.testbench 
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.counter_reg
+# Loading work.RYG_light
 # .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
 # 
-#           Attempting to use alternate WLF file "./wlftzmc06x".
+#           Attempting to use alternate WLF file "./wlftyg1cs8".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftzmc06x
+#           Using alternate file: ./wlftyg1cs8
+# 
+# ** Error: invalid command name "0"
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: invalid command name "0"
+# Executing ONERROR command at macro ./wave.do line 16
+# ** Error: invalid command name "0"
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: invalid command name "1"
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: invalid command name "1"
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: invalid command name "1"
+# Executing ONERROR command at macro ./wave.do line 20
+# Break in Module testbench at ../tb/testbench.sv line 21
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RYG_light
+# 
+# Top level modules:
+# 	RYG_light
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.RYG_light
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
+# 
+#           Attempting to use alternate WLF file "./wlftq9arhz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftq9arhz
+# 
+# Break in Module testbench at ../tb/testbench.sv line 21
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RYG_light
+# 
+# Top level modules:
+# 	RYG_light
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.RYG_light
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
+# 
+#           Attempting to use alternate WLF file "./wlftna64mw".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftna64mw
 # 
 # Break in Module testbench at ../tb/testbench.sv line 21
 # Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21

@@ -2,234 +2,235 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\Chia-Yu Wang\Desktop\Computer-System-Design\simulation\modelsim
+Z0 dD:\school\Computer-System-Design_HW\simulation\modelsim
 vclock
 Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
-Z2 Ig^`eOcOG@gMeO5ZfXb=zD2
+Z2 IQn9D8IWliZ8@86;MPicQ31
 Z3 VBo^;EKo5WP`H[LO>d]JSe1
 S1
-Z4 dC:\Users\Chia-Yu Wang\Desktop\Computer-System-Design\simulation\modelsim
-Z5 w1664367960
-Z6 8C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/clock.sv
-Z7 FC:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/clock.sv
+Z4 dD:\school\Computer-System-Design_HW\simulation\modelsim
+Z5 w1664887277
+Z6 8D:/school/Computer-System-Design_HW/design/clock.sv
+Z7 FD:/school/Computer-System-Design_HW/design/clock.sv
 L0 2
 Z8 OV;L;10.1d;51
 r1
 31
 Z9 o-sv -work work -O0
-Z10 !s92 -sv -work work {+incdir+C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design} -O0
-Z11 !s100 ^L2G>K8n3=P@8Ob8acfZf1
+Z10 !s92 -sv -work work +incdir+D:/school/Computer-System-Design_HW/design -O0
+Z11 !s100 0kE>Abje:a^gEgJVJC8AC1
 Z12 !s105 clock_sv_unit
-Z13 !s108 1664856924.984000
-Z14 !s107 C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/clock.sv|
-Z15 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design|C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/clock.sv|
+Z13 !s108 1664898286.375000
+Z14 !s107 D:/school/Computer-System-Design_HW/design/clock.sv|
+Z15 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/school/Computer-System-Design_HW/design|D:/school/Computer-System-Design_HW/design/clock.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vcounter_4bit_0_2
 R1
-Z16 I@gRi9iZ5?7?gW?lXZPV]Q0
+Z16 IIKCkTIIWPYIOZ2<XHo=HV0
 Z17 Vm63B>J4ElLZ2YCUHaJPCl1
 S1
 R4
-Z18 w1664360461
-Z19 8C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_2.sv
-Z20 FC:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_2.sv
+R5
+Z18 8D:/school/Computer-System-Design_HW/design/counter_4bit_0_2.sv
+Z19 FD:/school/Computer-System-Design_HW/design/counter_4bit_0_2.sv
 L0 2
 R8
 r1
 31
 R9
 R10
-Z21 !s100 IkPGoH`b_M[<R0hSIYWld0
-Z22 !s105 counter_4bit_0_2_sv_unit
-Z23 !s108 1664856924.810000
-Z24 !s107 C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_2.sv|
-Z25 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design|C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_2.sv|
+Z20 !s100 f[?gFMG=<d9NijRHPg0S_3
+Z21 !s105 counter_4bit_0_2_sv_unit
+Z22 !s108 1664898286.235000
+Z23 !s107 D:/school/Computer-System-Design_HW/design/counter_4bit_0_2.sv|
+Z24 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/school/Computer-System-Design_HW/design|D:/school/Computer-System-Design_HW/design/counter_4bit_0_2.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vcounter_4bit_0_5
 R1
-Z26 IZD;N^GDe]8h>o[l>XcUR00
-Z27 VBH^=zQ4[8cAe3<5[R512j0
+Z25 I_o<n4fY5`f;DSKodUR`S72
+Z26 VBH^=zQ4[8cAe3<5[R512j0
 S1
 R4
-Z28 w1664368414
-Z29 8C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_5.sv
-Z30 FC:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_5.sv
+R5
+Z27 8D:/school/Computer-System-Design_HW/design/counter_4bit_0_5.sv
+Z28 FD:/school/Computer-System-Design_HW/design/counter_4bit_0_5.sv
 L0 2
 R8
 r1
 31
 R9
 R10
-Z31 !s100 T01DZVR:8jazI=Wm^bD0^3
-Z32 !s105 counter_4bit_0_5_sv_unit
-Z33 !s108 1664856924.754000
-Z34 !s107 C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_5.sv|
-Z35 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design|C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_5.sv|
+Z29 !s100 YeM:I0b_dC5YoTJ8hCn8C1
+Z30 !s105 counter_4bit_0_5_sv_unit
+Z31 !s108 1664898286.189000
+Z32 !s107 D:/school/Computer-System-Design_HW/design/counter_4bit_0_5.sv|
+Z33 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/school/Computer-System-Design_HW/design|D:/school/Computer-System-Design_HW/design/counter_4bit_0_5.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vcounter_4bit_0_9
 R1
-Z36 IJG1n2<f:GE?RY3OCE2MB52
-Z37 VniKTH]^]UOh9e]_OAKE[o0
+Z34 I^<9@im<cE7?a35EoZdO_c3
+Z35 VniKTH]^]UOh9e]_OAKE[o0
 S1
 R4
-Z38 w1664202301
-Z39 8C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_9.sv
-Z40 FC:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_9.sv
+R5
+Z36 8D:/school/Computer-System-Design_HW/design/counter_4bit_0_9.sv
+Z37 FD:/school/Computer-System-Design_HW/design/counter_4bit_0_9.sv
 L0 2
 R8
 r1
 31
 R9
 R10
-Z41 !s100 351F]^72J]_To<ATabMFg2
-Z42 !s105 counter_4bit_0_9_sv_unit
-Z43 !s108 1664856924.644000
-Z44 !s107 C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_9.sv|
-Z45 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design|C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_9.sv|
+Z38 !s100 UgZF<Gc2@]?iS23R^U<VA1
+Z39 !s105 counter_4bit_0_9_sv_unit
+Z40 !s108 1664898286.096000
+Z41 !s107 D:/school/Computer-System-Design_HW/design/counter_4bit_0_9.sv|
+Z42 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/school/Computer-System-Design_HW/design|D:/school/Computer-System-Design_HW/design/counter_4bit_0_9.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vcounter_4bit_0_9_0_3
 R1
-Z46 IU`3<mUYon4;MMDAG]g42P2
-Z47 VjCND9QRigz@On4gV=KW]S2
+Z43 I8W;2OLb:@`N<Xd`N2W=850
+Z44 VjCND9QRigz@On4gV=KW]S2
 S1
 R4
-Z48 w1664359849
-Z49 8C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_9_0_3.sv
-Z50 FC:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_9_0_3.sv
+R5
+Z45 8D:/school/Computer-System-Design_HW/design/counter_4bit_0_9_0_3.sv
+Z46 FD:/school/Computer-System-Design_HW/design/counter_4bit_0_9_0_3.sv
 L0 2
 R8
 r1
 31
 R9
 R10
-Z51 !s100 oNV6oC`C90e?EEN8RAX6f1
-Z52 !s105 counter_4bit_0_9_0_3_sv_unit
-Z53 !s108 1664856924.869000
-Z54 !s107 C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_9_0_3.sv|
-Z55 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design|C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_4bit_0_9_0_3.sv|
+Z47 !s100 KGN6IQ9C`cX<5g^L;IAhz1
+Z48 !s105 counter_4bit_0_9_0_3_sv_unit
+Z49 !s108 1664898286.282000
+Z50 !s107 D:/school/Computer-System-Design_HW/design/counter_4bit_0_9_0_3.sv|
+Z51 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/school/Computer-System-Design_HW/design|D:/school/Computer-System-Design_HW/design/counter_4bit_0_9_0_3.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vcounter_BCD_hour
 R1
-Z56 IeFe90;AEV;J8@C<P2`>3H1
-Z57 V0LzimO0e1cY6_GVd@Izbh1
+Z52 Ii1M?MC;A29d`M[3bihWOS3
+Z53 V0LzimO0e1cY6_GVd@Izbh1
 S1
 R4
-Z58 w1664368112
-Z59 8C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_BCD_hour.sv
-Z60 FC:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_BCD_hour.sv
+R5
+Z54 8D:/school/Computer-System-Design_HW/design/counter_BCD_hour.sv
+Z55 FD:/school/Computer-System-Design_HW/design/counter_BCD_hour.sv
 L0 2
 R8
 r1
 31
 R9
 R10
-Z61 ncounter_@b@c@d_hour
-Z62 !s100 6B;dacHPbMGbnB59>_;;A0
-Z63 !s105 counter_BCD_hour_sv_unit
-Z64 !s108 1664856924.926000
-Z65 !s107 C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_BCD_hour.sv|
-Z66 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design|C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_BCD_hour.sv|
+Z56 ncounter_@b@c@d_hour
+Z57 !s100 =1^^cRgL@a?cijzjGQ4C33
+Z58 !s105 counter_BCD_hour_sv_unit
+Z59 !s108 1664898286.328000
+Z60 !s107 D:/school/Computer-System-Design_HW/design/counter_BCD_hour.sv|
+Z61 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/school/Computer-System-Design_HW/design|D:/school/Computer-System-Design_HW/design/counter_BCD_hour.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vcounter_BCD_min
 R1
-Z67 InG[h1K:lUm:OJk`U;IU333
-Z68 VlaIcd_3iQeS5a^>Nd_GgP0
+Z62 Ink]9NhHA:BY;i<`V7d7T]3
+Z63 VlaIcd_3iQeS5a^>Nd_GgP0
 S1
 R4
-Z69 w1664363166
-Z70 8C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_BCD_min.sv
-Z71 FC:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_BCD_min.sv
+R5
+Z64 8D:/school/Computer-System-Design_HW/design/counter_BCD_min.sv
+Z65 FD:/school/Computer-System-Design_HW/design/counter_BCD_min.sv
 L0 2
 R8
 r1
 31
 R9
 R10
-Z72 ncounter_@b@c@d_min
-Z73 !s100 8kHa=EPkoBh<5[oUEQO6X1
-Z74 !s105 counter_BCD_min_sv_unit
-Z75 !s108 1664856924.700000
-Z76 !s107 C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_BCD_min.sv|
-Z77 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design|C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/counter_BCD_min.sv|
+Z66 ncounter_@b@c@d_min
+Z67 !s100 d3S<8E@zA:BLLDP@SU?IM3
+Z68 !s105 counter_BCD_min_sv_unit
+Z69 !s108 1664898286.143000
+Z70 !s107 D:/school/Computer-System-Design_HW/design/counter_BCD_min.sv|
+Z71 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/school/Computer-System-Design_HW/design|D:/school/Computer-System-Design_HW/design/counter_BCD_min.sv|
 !i10b 1
 !s85 0
 !s101 -O0
-vcounter_reg
+vRYG_light
 R1
 !i10b 1
-!s100 TPo`=NeXm0_7?VN=1i0QK1
-IeVl^3a<HDi<^R9aHY2:D10
-VIPB^4L7^hAc8D8XZ6Y^:01
-!s105 counter_reg_sv_unit
+!s100 VXKZA5n=CKPfGOY5PKR161
+Ijg6n^Xg5j;]Q3::8n9`;71
+Z72 VTbHNI66:EH4eMAM=7TL3f3
+Z73 !s105 RYG_light_sv_unit
 S1
 R4
-w1664856856
-8../../design/counter_reg.sv
-F../../design/counter_reg.sv
+w1664898651
+Z74 8../../design/RYG_light.sv
+Z75 F../../design/RYG_light.sv
 L0 2
 R8
 r1
 !s85 0
 31
-!s108 1664857007.548000
-!s107 ../../design/counter_reg.sv|
-!s90 -reportprogress|300|../../design/counter_reg.sv|
+!s108 1664898656.831000
+!s107 ../../design/RYG_light.sv|
+Z76 !s90 -reportprogress|300|../../design/RYG_light.sv|
 !s101 -O0
 o-O0
+Z77 n@r@y@g_light
 vseven_segment
 R1
-Z78 I52]lo65M?cf:o>M4_07=e3
+Z78 IiEXUg@`h<6YkK@g9e2Z<A1
 Z79 VlUhzgMS<aWe0DFYGi;8WD1
 S1
 R4
-Z80 w1663768657
-Z81 8C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/seven_segment.sv
-Z82 FC:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/seven_segment.sv
+R5
+Z80 8D:/school/Computer-System-Design_HW/design/seven_segment.sv
+Z81 FD:/school/Computer-System-Design_HW/design/seven_segment.sv
 L0 1
 R8
 r1
 31
 R9
 R10
-Z83 !s100 3ogaQcDUMPY7422NW[3jX0
-Z84 !s105 seven_segment_sv_unit
-Z85 !s108 1664856924.538000
-Z86 !s107 C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/seven_segment.sv|
-Z87 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design|C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/seven_segment.sv|
+Z82 !s100 5gM5TSC1jT^Kll?FcVJTF2
+Z83 !s105 seven_segment_sv_unit
+Z84 !s108 1664898286.049000
+Z85 !s107 D:/school/Computer-System-Design_HW/design/seven_segment.sv|
+Z86 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/school/Computer-System-Design_HW/design|D:/school/Computer-System-Design_HW/design/seven_segment.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vtestbench
 R1
-Z88 IQWP0K2c>Lag31BdPSz<Z41
+Z87 !s100 W4Eg<d=M>]JL;H=j?mheG1
+Z88 I1OfoN6PHAkMZoO=hM9iQ[0
 Z89 VhGfW:390DM[oDMzegDH9`2
+Z90 !s105 testbench_sv_unit
 S1
 R4
-Z90 w1664791101
-Z91 8../tb/testbench.sv
-Z92 F../tb/testbench.sv
+Z91 w1664898029
+Z92 8../tb/testbench.sv
+Z93 F../tb/testbench.sv
 L0 2
 R8
 r1
 31
+Z94 !s90 -reportprogress|300|../tb/testbench.sv|
 o-O0
 !i10b 1
-Z93 !s100 lH_9;5<dM9oJSc5JUzk;b1
-Z94 !s105 testbench_sv_unit
 !s85 0
-Z95 !s108 1664857007.481000
+Z95 !s108 1664898656.694000
 Z96 !s107 ../tb/testbench.sv|
-Z97 !s90 -reportprogress|300|../tb/testbench.sv|
 !s101 -O0

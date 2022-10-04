@@ -1,0 +1,83 @@
+`timescale 1ns/10ps
+module RYG_light(
+	input clk,               //時脈
+	input reset,				 //reset
+	input load_w,				 //載入控制
+	output logic[3:0] q		 //輸出
+);
+
+	logic cp1,cp2;   			 //是否計數
+	logic [3:0] a,b;         //暫存值
+	logic [1:0] ps,ns;		 //現在狀態 下一個狀態
+	
+	always_ff @(posedge clk)       //fsm
+	begin 
+		if(reset)
+			ps <= #1 0;
+		else 
+			ps <= #1 ns;
+	end
+	
+	always_ff @(posedge clk)      //counter1
+	begin
+		if(reset) a <= #1 0;
+		else if(cp1) a <= #1 a + 1;
+	end
+	
+	always_ff @(posedge clk)      //counter2
+	begin
+		if(reset) b <= #1 0;
+		else if(cp2) b <= #1 b + 1;
+	end
+	
+	parameter STATE_TOGTHER = 0;  //一起計數
+	parameter STATE_CNT1 = 1;		//只數cnt1
+	parameter STATE_STOP = 2;		//暫停
+	
+	always_comb
+	begin
+		cp1 = 0; cp2 = 0;
+		case(ps)
+			STATE_TOGTHER:          //一起計數
+			begin
+			if(b == 4'd4)        	//當cnt2數到4 ，就只數cnt1
+					begin
+						cp1 = 1;
+						ns = STATE_CNT1;
+					end
+			else                 	//不然就一起數
+					begin
+						ns = STATE_TOGTHER;
+						cp1 = 1;
+						cp2 = 1;
+					end
+			end
+
+			STATE_CNT1:              //只數cnt1
+			begin
+				if(a == 4'd9) ns = STATE_STOP;
+				else 
+					begin
+						ns = STATE_CNT1;
+						cp1 = 1;
+					end
+			end
+			
+			STATE_STOP:             //不數了
+			ns = STATE_STOP;
+				
+		endcase
+	end
+	
+	always_ff @(posedge clk)
+	begin
+		if(reset)
+			q <= 0;
+		else if(load_w == 1)
+			q <= a+b;
+		else 
+			q <= q;
+	end
+endmodule
+	
+	
