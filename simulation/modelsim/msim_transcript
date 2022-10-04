@@ -70,7 +70,7 @@ do compile.do
 # 
 # Top level modules:
 # 	counter_reg
-do  sim.do
+do sim.do
 # vsim -voptargs=+acc work.testbench 
 # Loading sv_std.std
 # Loading work.testbench
@@ -80,68 +80,10 @@ do  sim.do
 # 
 #           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
 # 
-#           Attempting to use alternate WLF file "./wlftke82y2".
+#           Attempting to use alternate WLF file "./wlftzmc06x".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftke82y2
-# 
-# Break in Module testbench at ../tb/testbench.sv line 21
-# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
-# MACRO ./sim.do PAUSED at line 7
-do compile.do
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module testbench
-# 
-# Top level modules:
-# 	testbench
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module counter_reg
-# 
-# Top level modules:
-# 	counter_reg
-do  sim.do
-# vsim -voptargs=+acc work.testbench 
-# Loading sv_std.std
-# Loading work.testbench
-# Loading work.counter_reg
-# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
-# 
-#           Attempting to use alternate WLF file "./wlftgnt8nt".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftgnt8nt
-# 
-# Break in Module testbench at ../tb/testbench.sv line 21
-# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
-# MACRO ./sim.do PAUSED at line 7
-do compile.do
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module testbench
-# 
-# Top level modules:
-# 	testbench
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module counter_reg
-# 
-# Top level modules:
-# 	counter_reg
-do  sim.do
-# vsim -voptargs=+acc work.testbench 
-# Loading sv_std.std
-# Loading work.testbench
-# Loading work.counter_reg
-# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
-# 
-#           Attempting to use alternate WLF file "./wlftgcei9c".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftgcei9c
+#           Using alternate file: ./wlftzmc06x
 # 
 # Break in Module testbench at ../tb/testbench.sv line 21
 # Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21

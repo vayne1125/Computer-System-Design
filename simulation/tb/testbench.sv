@@ -7,7 +7,7 @@ module testbench;
 	logic load_w;
 
 	counter_reg counter_reg1(
-		.reset(reset), //()內的變數為tb的變數，"."後面為clock.sv的變數，將2者對應起來
+		.reset(reset), //()內的變數為tb的變數，"."後面為counter_reg.sv的變數，將2者對應起來
 		.clk(clk),
 		.q(q),
 		.load_w(load_w)

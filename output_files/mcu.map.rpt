@@ -1,5 +1,5 @@
 Analysis & Elaboration report for mcu
-Mon Oct 03 12:14:05 2022
+Tue Oct 04 12:14:22 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                  ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Mon Oct 03 12:14:05 2022      ;
+; Analysis & Elaboration Status      ; Successful - Tue Oct 04 12:14:22 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; mcu                                        ;
 ; Top-level Entity Name              ; clock                                      ;
@@ -168,7 +168,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Elaboration
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Oct 03 12:14:03 2022
+    Info: Processing started: Tue Oct 04 12:14:21 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mcu -c mcu --analysis_and_elaboration
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file design/seven_segment.sv
@@ -197,10 +197,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file design/
     Info (12023): Found entity 1: counter_BCD_hour
 Info (12021): Found 1 design units, including 1 entities, in source file design/clock.sv
     Info (12023): Found entity 1: clock
-Warning (12019): Can't analyze file -- file mcu.sv is missing
 Info (12021): Found 1 design units, including 1 entities, in source file design/counter_abc.sv
     Info (12023): Found entity 1: counter_abc
-Warning (10229): Verilog HDL Expression warning at counter_reg.sv(54): truncated literal to match 3 bits
 Info (12021): Found 1 design units, including 1 entities, in source file design/counter_reg.sv
     Info (12023): Found entity 1: counter_reg
 Info (12127): Elaborating entity "clock" for the top level hierarchy
@@ -220,10 +218,10 @@ Info (12128): Elaborating entity "counter_4bit_0_2" for hierarchy "counter_BCD_h
 Warning (10230): Verilog HDL assignment warning at counter_4bit_0_2.sv(17): truncated value with size 32 to match size of target (4)
 Warning (10230): Verilog HDL assignment warning at counter_4bit_0_2.sv(20): truncated value with size 32 to match size of target (1)
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 12 warnings
+Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 10 warnings
     Info: Peak virtual memory: 4600 megabytes
-    Info: Processing ended: Mon Oct 03 12:14:05 2022
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Tue Oct 04 12:14:22 2022
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -1,14 +1,14 @@
 `timescale 1ns/10ps
 module counter_reg(
-	input clk,
-	input reset,
-	input load_w,
-	output logic[3:0] q
+	input clk,               //時脈
+	input reset,				 //reset
+	input load_w,				 //載入控制
+	output logic[3:0] q		 //輸出
 );
 
-	logic cp1,cp2;
-	logic [3:0] a,b;
-	logic [1:0] ps,ns;
+	logic cp1,cp2;   			 //是否計數
+	logic [3:0] a,b;         //暫存值
+	logic [1:0] ps,ns;		 //現在狀態 下一個狀態
 	
 	always_ff @(posedge clk)       //fsm
 	begin 
@@ -30,22 +30,22 @@ module counter_reg(
 		else if(cp2) b <= #1 b + 1;
 	end
 	
-	parameter STATE_TOGTHER = 0;
-	parameter STATE_CNT1 = 1;
-	parameter STATE_STOP = 2;
+	parameter STATE_TOGTHER = 0;  //一起計數
+	parameter STATE_CNT1 = 1;		//只數cnt1
+	parameter STATE_STOP = 2;		//暫停
 	
 	always_comb
 	begin
 		cp1 = 0; cp2 = 0;
 		case(ps)
-			STATE_TOGTHER:
+			STATE_TOGTHER:          //一起計數
 			begin
-				if(b == 4'd4) 
+			if(b == 4'd4)        	//當cnt2數到4 ，就只數cnt1
 					begin
 						cp1 = 1;
 						ns = STATE_CNT1;
 					end
-				else 
+			else                 	//不然就一起數
 					begin
 						ns = STATE_TOGTHER;
 						cp1 = 1;
@@ -53,7 +53,7 @@ module counter_reg(
 					end
 			end
 
-			STATE_CNT1:
+			STATE_CNT1:              //只數cnt1
 			begin
 				if(a == 4'd9) ns = STATE_STOP;
 				else 
@@ -63,18 +63,20 @@ module counter_reg(
 					end
 			end
 			
-			STATE_STOP:
+			STATE_STOP:             //不數了
 			ns = STATE_STOP;
 				
 		endcase
 	end
 	
-	always_comb
+	always_ff @(posedge clk)
 	begin
-		if(load_w == 1)
-			q = a+b;
+		if(reset)
+			q <= 0;
+		else if(load_w == 1)
+			q <= a+b;
 		else 
-			q = q;
+			q <= q;
 	end
 endmodule
 	
