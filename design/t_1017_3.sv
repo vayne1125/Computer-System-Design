@@ -1,0 +1,160 @@
+`timescale 1ns/10ps
+module t_1017_3(
+	input clk,               //時脈
+	input reset,				 //reset
+	output logic [5:0] W    //output
+);
+
+	logic load_w;            //load控制線
+	logic [3:0] ps,ns;		 //現在狀態 下一個狀態
+	logic [5:0] B;           //計數器 中間的值
+	logic [5:0] S;           //S = W+B
+	logic cnt;
+	
+	always_ff @(posedge clk)       //fsm
+	begin 
+		if(reset)
+			ps <= #1 0;
+		else 
+			ps <= #1 ns;
+	end
+	
+	always_ff @(posedge clk)       //fsm
+	begin 
+		if(reset)
+			W	<= #1 0;
+		else if(load_w) 
+			W	<= #1 S;
+	end
+	
+	always_ff @(posedge clk)       //fsm
+	begin 
+		if(reset)
+			B	<= #1 0;
+		else if(cnt)
+			B	<= #1 B + 1;
+	end
+	
+	assign S = W + B;             //累積的結果
+		
+	always_comb
+	begin
+	ns = 0;
+	load_w = 0;
+	cnt = 0;
+	case(ps)         
+			0:                     //1
+			begin
+				ns = 1;
+				cnt = 1;
+				load_w = 1;
+			end
+
+			1:                     //1
+			begin
+				ns = 2;
+				cnt = 0;
+				load_w = 1;
+			end
+			
+			2:                     //2
+			begin
+				ns = 3;
+				cnt = 1;
+				load_w = 1;
+			end
+			
+			3:                     //3
+			begin
+				ns = 4;
+				cnt = 1;
+				load_w = 1;
+			end
+			
+			4:                     //4
+			begin
+				ns = 5;
+				cnt = 1;
+				load_w = 1;
+			end
+			
+			5:                     //5
+			begin
+				ns = 6;
+				cnt = 1;
+				//load_w = 1;
+			end
+			
+			6:                     //6
+			begin
+				ns = 7;
+				cnt = 1;
+				load_w = 1;
+			end
+			
+			7:                     //7
+			begin 
+				ns = 8;
+				cnt = 1;
+				//load_w = 1;
+			end
+			
+			8:                     //8
+			begin
+				ns = 9;
+				cnt = 1;
+				//load_w = 1;
+			end
+			
+			9:                     //9
+			begin
+				ns = 10;
+				cnt = 1;
+				load_w = 1;
+			end
+			
+			10:                   //10       
+			begin 
+				ns = 11;
+				cnt = 1;
+			  //load_w = 1;
+			end
+			
+			11:                   //11
+			begin
+				ns = 12;
+				cnt = 1;
+		 	//load_w = 1;				
+			end
+			
+			12:                   //12
+			begin
+				ns = 13;
+				cnt = 1;
+			   //load_w = 1;				
+			end
+			
+			13:                   //13
+			begin
+				ns = 14;
+				cnt = 1;
+				//load_w = 1;				
+			end
+			
+			14:
+			begin
+				ns = 15;	
+				load_w = 1;	
+			end
+			
+			15:
+			begin
+				ns = 15;	
+			end
+		endcase
+	end
+
+
+endmodule
+	
+	

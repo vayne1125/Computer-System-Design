@@ -3,14 +3,14 @@ module testbench;
 
 	logic reset;					//重置
 	logic clk;						//時脈
-	logic [1:0] R,Y,G; 	 		    //輸出
+	logic [7:0] port_A; 	 		//輸出
+	logic [7:0] port_B;
 
-	RYG_light RYG_light1(
-		.reset(reset), //()內的變數為tb的變數，"."後面為RYG_light.sv的變數，將2者對應起來
+	hw_1017_1 hw_1017_11(
+		.reset(reset), //()內的變數為tb的變數，"."後面為hw_1017_1.sv的變數，將2者對應起來
 		.clk(clk),
-		.R(R),
-		.G(G),
-		.Y(Y)
+		.port_A(port_A),
+		.port_B(port_B)
 	);
 
 	always #10 clk = ~clk;

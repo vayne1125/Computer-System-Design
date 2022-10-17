@@ -4,7 +4,7 @@
 
 # ------------------------------------------------------------
 vlog ../tb/testbench.sv
-vlog ../../design/RYG_light.sv
+vlog ../../design/hw_1017_1.sv
 
 
 

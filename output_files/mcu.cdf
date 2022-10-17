@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP3C16F484) Path("C:/Users/Chia-Yu Wang/Desktop/de0/output_files/") File("mcu.sof") MfrSpec(OpMask(1));
+		Device PartName(EP3C16F484) Path("C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/output_files/") File("mcu.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

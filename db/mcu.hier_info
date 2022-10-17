@@ -1,248 +1,105 @@
-|clock
-reset => reset.IN2
-clk => clk.IN2
-q[0] << counter_BCD_min:counter_BCD_min1.port2
-q[1] << counter_BCD_min:counter_BCD_min1.port2
-q[2] << counter_BCD_min:counter_BCD_min1.port2
-q[3] << counter_BCD_min:counter_BCD_min1.port2
-q[4] << counter_BCD_min:counter_BCD_min1.port2
-q[5] << counter_BCD_min:counter_BCD_min1.port2
-q[6] << counter_BCD_min:counter_BCD_min1.port2
-q[7] << counter_BCD_min:counter_BCD_min1.port2
-q[8] << counter_BCD_min:counter_BCD_min1.port2
-q[9] << counter_BCD_min:counter_BCD_min1.port2
-q[10] << counter_BCD_min:counter_BCD_min1.port2
-q[11] << counter_BCD_min:counter_BCD_min1.port2
-q[12] << counter_BCD_min:counter_BCD_min1.port2
-q[13] << counter_BCD_min:counter_BCD_min1.port2
-q[14] << counter_BCD_hour:counter_BCD_hour1.port3
-q[15] << counter_BCD_hour:counter_BCD_hour1.port3
-q[16] << counter_BCD_hour:counter_BCD_hour1.port3
-q[17] << counter_BCD_hour:counter_BCD_hour1.port3
-q[18] << counter_BCD_hour:counter_BCD_hour1.port3
-q[19] << counter_BCD_hour:counter_BCD_hour1.port3
-q[20] << counter_BCD_hour:counter_BCD_hour1.port3
-q[21] << counter_BCD_hour:counter_BCD_hour1.port3
-q[22] << counter_BCD_hour:counter_BCD_hour1.port3
-q[23] << counter_BCD_hour:counter_BCD_hour1.port3
-q[24] << counter_BCD_hour:counter_BCD_hour1.port3
-q[25] << counter_BCD_hour:counter_BCD_hour1.port3
-q[26] << counter_BCD_hour:counter_BCD_hour1.port3
-q[27] << counter_BCD_hour:counter_BCD_hour1.port3
-s[0] << counter_BCD_min:counter_BCD_min1.port3
-s[1] << counter_BCD_min:counter_BCD_min1.port3
-s[2] << counter_BCD_min:counter_BCD_min1.port3
-s[3] << counter_BCD_min:counter_BCD_min1.port3
-s[4] << counter_BCD_min:counter_BCD_min1.port3
-s[5] << counter_BCD_min:counter_BCD_min1.port3
-s[6] << counter_BCD_min:counter_BCD_min1.port3
-s[7] << counter_BCD_min:counter_BCD_min1.port3
-s[8] << counter_BCD_hour:counter_BCD_hour1.port4
-s[9] << counter_BCD_hour:counter_BCD_hour1.port4
-s[10] << counter_BCD_hour:counter_BCD_hour1.port4
-s[11] << counter_BCD_hour:counter_BCD_hour1.port4
-s[12] << counter_BCD_hour:counter_BCD_hour1.port4
-s[13] << counter_BCD_hour:counter_BCD_hour1.port4
-s[14] << counter_BCD_hour:counter_BCD_hour1.port4
-s[15] << counter_BCD_hour:counter_BCD_hour1.port4
+|mcu
+CLK => ~NO_FANOUT~
+HEX0[0] << <GND>
+HEX0[1] << <GND>
+HEX0[2] << <GND>
+HEX0[3] << <GND>
+HEX0[4] << <GND>
+HEX0[5] << <GND>
+HEX0[6] << <GND>
+HEX1[0] << <GND>
+HEX1[1] << <GND>
+HEX1[2] << <GND>
+HEX1[3] << <GND>
+HEX1[4] << <GND>
+HEX1[5] << <GND>
+HEX1[6] << <GND>
+HEX2[0] << <GND>
+HEX2[1] << <GND>
+HEX2[2] << <GND>
+HEX2[3] << <GND>
+HEX2[4] << <GND>
+HEX2[5] << <GND>
+HEX2[6] << <GND>
+HEX3[0] << <GND>
+HEX3[1] << <GND>
+HEX3[2] << <GND>
+HEX3[3] << <GND>
+HEX3[4] << <GND>
+HEX3[5] << <GND>
+HEX3[6] << <GND>
+LED[0] << t_1017_3:t_1017_31.W
+LED[1] << t_1017_3:t_1017_31.W
+LED[2] << t_1017_3:t_1017_31.W
+LED[3] << t_1017_3:t_1017_31.W
+LED[4] << t_1017_3:t_1017_31.W
+LED[5] << t_1017_3:t_1017_31.W
+LED[6] << <GND>
+LED[7] << <GND>
+LED[8] << <GND>
+LED[9] << <GND>
+SW[0] => ~NO_FANOUT~
+SW[1] => ~NO_FANOUT~
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+BTN[0] => _.IN1
+BTN[1] => ~NO_FANOUT~
+BTN[2] => BTN[2].IN1
 
 
-|clock|counter_BCD_min:counter_BCD_min1
-reset => reset.IN2
-clk => clk.IN2
-q[0] <= seven_segment:seven_segment1.port1
-q[1] <= seven_segment:seven_segment1.port1
-q[2] <= seven_segment:seven_segment1.port1
-q[3] <= seven_segment:seven_segment1.port1
-q[4] <= seven_segment:seven_segment1.port1
-q[5] <= seven_segment:seven_segment1.port1
-q[6] <= seven_segment:seven_segment1.port1
-q[7] <= seven_segment:seven_segment2.port1
-q[8] <= seven_segment:seven_segment2.port1
-q[9] <= seven_segment:seven_segment2.port1
-q[10] <= seven_segment:seven_segment2.port1
-q[11] <= seven_segment:seven_segment2.port1
-q[12] <= seven_segment:seven_segment2.port1
-q[13] <= seven_segment:seven_segment2.port1
-s[0] <= s[0].DB_MAX_OUTPUT_PORT_TYPE
-s[1] <= s[1].DB_MAX_OUTPUT_PORT_TYPE
-s[2] <= s[2].DB_MAX_OUTPUT_PORT_TYPE
-s[3] <= s[3].DB_MAX_OUTPUT_PORT_TYPE
-s[4] <= s[4].DB_MAX_OUTPUT_PORT_TYPE
-s[5] <= s[5].DB_MAX_OUTPUT_PORT_TYPE
-s[6] <= s[6].DB_MAX_OUTPUT_PORT_TYPE
-s[7] <= s[7].DB_MAX_OUTPUT_PORT_TYPE
-carry_out <= counter_4bit_0_5:counter_4bit_0_5_1.port4
-
-
-|clock|counter_BCD_min:counter_BCD_min1|counter_4bit_0_9:counter_4bit_0_9_1
-reset => value.OUTPUTSELECT
-reset => value.OUTPUTSELECT
-reset => value.OUTPUTSELECT
-reset => value.OUTPUTSELECT
-clk => value[0]~reg0.CLK
-clk => value[1]~reg0.CLK
-clk => value[2]~reg0.CLK
-clk => value[3]~reg0.CLK
-carry_in => always0.IN1
-carry_in => value.OUTPUTSELECT
-carry_in => value.OUTPUTSELECT
-carry_in => value.OUTPUTSELECT
-carry_in => value.OUTPUTSELECT
-value[0] <= value[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-value[1] <= value[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-value[2] <= value[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-value[3] <= value[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-carry_out <= always0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|clock|counter_BCD_min:counter_BCD_min1|counter_4bit_0_5:counter_4bit_0_5_1
-reset => value.OUTPUTSELECT
-reset => value.OUTPUTSELECT
-reset => value.OUTPUTSELECT
-reset => value.OUTPUTSELECT
-clk => value[0]~reg0.CLK
-clk => value[1]~reg0.CLK
-clk => value[2]~reg0.CLK
-clk => value[3]~reg0.CLK
-carry_in => always0.IN1
-carry_in => value.OUTPUTSELECT
-carry_in => value.OUTPUTSELECT
-carry_in => value.OUTPUTSELECT
-carry_in => value.OUTPUTSELECT
-value[0] <= value[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-value[1] <= value[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-value[2] <= value[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-value[3] <= value[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-carry_out <= always0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|clock|counter_BCD_min:counter_BCD_min1|seven_segment:seven_segment1
-A[0] => Decoder0.IN3
-A[1] => Decoder0.IN2
-A[2] => Decoder0.IN1
-A[3] => Decoder0.IN0
-y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|clock|counter_BCD_min:counter_BCD_min1|seven_segment:seven_segment2
-A[0] => Decoder0.IN3
-A[1] => Decoder0.IN2
-A[2] => Decoder0.IN1
-A[3] => Decoder0.IN0
-y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|clock|counter_BCD_hour:counter_BCD_hour1
-reset => reset.IN2
-clk => clk.IN2
-carry_in => carry_in.IN1
-q[0] <= seven_segment:seven_segment1.port1
-q[1] <= seven_segment:seven_segment1.port1
-q[2] <= seven_segment:seven_segment1.port1
-q[3] <= seven_segment:seven_segment1.port1
-q[4] <= seven_segment:seven_segment1.port1
-q[5] <= seven_segment:seven_segment1.port1
-q[6] <= seven_segment:seven_segment1.port1
-q[7] <= seven_segment:seven_segment2.port1
-q[8] <= seven_segment:seven_segment2.port1
-q[9] <= seven_segment:seven_segment2.port1
-q[10] <= seven_segment:seven_segment2.port1
-q[11] <= seven_segment:seven_segment2.port1
-q[12] <= seven_segment:seven_segment2.port1
-q[13] <= seven_segment:seven_segment2.port1
-s[0] <= s[0].DB_MAX_OUTPUT_PORT_TYPE
-s[1] <= s[1].DB_MAX_OUTPUT_PORT_TYPE
-s[2] <= s[2].DB_MAX_OUTPUT_PORT_TYPE
-s[3] <= s[3].DB_MAX_OUTPUT_PORT_TYPE
-s[4] <= s[4].DB_MAX_OUTPUT_PORT_TYPE
-s[5] <= s[5].DB_MAX_OUTPUT_PORT_TYPE
-s[6] <= s[6].DB_MAX_OUTPUT_PORT_TYPE
-s[7] <= s[7].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|clock|counter_BCD_hour:counter_BCD_hour1|counter_4bit_0_9_0_3:counter_4bit_0_9_0_3_1
-reset => value.OUTPUTSELECT
-reset => value.OUTPUTSELECT
-reset => value.OUTPUTSELECT
-reset => value.OUTPUTSELECT
-clk => value[0]~reg0.CLK
-clk => value[1]~reg0.CLK
-clk => value[2]~reg0.CLK
-clk => value[3]~reg0.CLK
-carry_in => always0.IN1
-carry_in => always0.IN1
-carry_in => value.OUTPUTSELECT
-carry_in => value.OUTPUTSELECT
-carry_in => value.OUTPUTSELECT
-carry_in => value.OUTPUTSELECT
-value[0] <= value[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-value[1] <= value[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-value[2] <= value[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-value[3] <= value[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
-mode => always0.IN1
-mode => always0.IN1
-
-
-|clock|counter_BCD_hour:counter_BCD_hour1|counter_4bit_0_2:counter_4bit_0_2_1
-reset => value.OUTPUTSELECT
-reset => value.OUTPUTSELECT
-reset => value.OUTPUTSELECT
-reset => value.OUTPUTSELECT
-clk => value[0]~reg0.CLK
-clk => value[1]~reg0.CLK
-clk => value[2]~reg0.CLK
-clk => value[3]~reg0.CLK
-carry_in => always0.IN1
-carry_in => value.OUTPUTSELECT
-carry_in => value.OUTPUTSELECT
-carry_in => value.OUTPUTSELECT
-carry_in => value.OUTPUTSELECT
-value[0] <= value[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-value[1] <= value[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-value[2] <= value[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-value[3] <= value[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-mode <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|clock|counter_BCD_hour:counter_BCD_hour1|seven_segment:seven_segment1
-A[0] => Decoder0.IN3
-A[1] => Decoder0.IN2
-A[2] => Decoder0.IN1
-A[3] => Decoder0.IN0
-y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|clock|counter_BCD_hour:counter_BCD_hour1|seven_segment:seven_segment2
-A[0] => Decoder0.IN3
-A[1] => Decoder0.IN2
-A[2] => Decoder0.IN1
-A[3] => Decoder0.IN0
-y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+|mcu|t_1017_3:t_1017_31
+clk => B[0].CLK
+clk => B[1].CLK
+clk => B[2].CLK
+clk => B[3].CLK
+clk => B[4].CLK
+clk => B[5].CLK
+clk => W[0]~reg0.CLK
+clk => W[1]~reg0.CLK
+clk => W[2]~reg0.CLK
+clk => W[3]~reg0.CLK
+clk => W[4]~reg0.CLK
+clk => W[5]~reg0.CLK
+clk => ps~8.DATAIN
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => W.OUTPUTSELECT
+reset => W.OUTPUTSELECT
+reset => W.OUTPUTSELECT
+reset => W.OUTPUTSELECT
+reset => W.OUTPUTSELECT
+reset => W.OUTPUTSELECT
+reset => B.OUTPUTSELECT
+reset => B.OUTPUTSELECT
+reset => B.OUTPUTSELECT
+reset => B.OUTPUTSELECT
+reset => B.OUTPUTSELECT
+reset => B.OUTPUTSELECT
+W[0] <= W[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+W[1] <= W[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+W[2] <= W[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+W[3] <= W[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+W[4] <= W[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+W[5] <= W[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -1,0 +1,131 @@
+`timescale 1ns/10ps
+module t_1017_1(
+	input clk,               //時脈
+	input reset,				 //reset
+	output logic[1:0] R,		 //紅燈
+	output logic[1:0] Y,		 //黃燈
+	output logic[1:0] G		 //綠燈
+);
+
+	logic [3:0] ps,ns;		 //現在狀態 下一個狀態
+	logic [5:0] tp;          //燈的變化
+	
+	always_ff @(posedge clk)       //fsm
+	begin 
+		if(reset)
+			ps <= #1 0;
+		else 
+			ps <= #1 ns;
+	end
+	
+	always_comb
+	begin
+	case(ps)         //每一種狀態對應到不同燈
+			0:         
+			begin
+				ns = 1;
+				tp = 6'b100001; //對應到R[0]Y[0]G[0]R[1]Y[1]G[1]
+			end
+
+			1:          
+			begin
+				ns = 2;
+				tp = 6'b100001;
+			end
+			
+			2:          
+			begin
+				ns = 3;
+				tp = 6'b100001;
+			end
+			
+			3:          
+			begin
+				ns = 4;
+				tp = 6'b100001;
+			end
+			
+			4:          
+			begin
+				ns = 5;
+				tp = 6'b100001;
+			end
+			
+			5:          
+			begin
+				ns = 6;
+				tp = 6'b100001;
+			end
+			
+			6:          
+			begin
+				ns = 7;
+				tp = 6'b100010;
+			end
+			
+			7:          
+			begin
+				ns = 8;
+				tp = 6'b100010;
+			end
+			
+			8:          
+			begin
+				ns = 9;
+				tp = 6'b001100;
+			end
+			
+			9:          
+			begin
+				ns = 10;
+				tp = 6'b001100;
+			end
+			
+			10:          
+			begin
+				ns = 11;
+				tp = 6'b001100;
+			end
+			
+			11:          
+			begin
+				ns = 12;
+				tp = 6'b001100;
+			end
+		
+			12:          
+			begin
+				ns = 13;
+				tp = 6'b001100;
+			end
+			
+			13:          
+			begin
+				ns = 14;
+				tp = 6'b001100;
+			end
+			
+			14:          
+			begin
+				ns = 15;
+				tp = 6'b010100;
+			end
+			
+			15:          
+			begin
+				ns = 0;
+				tp = 6'b010100;
+			end
+		endcase
+	end
+	
+	assign R[0] = tp[5];   //將tp的值給output
+	assign Y[0] = tp[4];
+	assign G[0] = tp[3];
+	assign R[1] = tp[2];
+	assign Y[1] = tp[1];
+	assign G[1] = tp[0];
+
+endmodule
+	
+	

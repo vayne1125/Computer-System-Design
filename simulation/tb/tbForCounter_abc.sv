@@ -1,5 +1,5 @@
 `timescale 1ns/10ps
-module testbench;
+module tbForCounter_abc;
 
 	logic reset;					//重置
 	logic clk;						//時脈

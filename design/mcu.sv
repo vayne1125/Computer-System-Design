@@ -26,20 +26,12 @@ module mcu(
 );
 //*******************************//
 
-logic [2:0] q;
-
 // add module here
-counter_8 counter_81(
+t_1017_3 t_1017_31(
 	.reset(~BTN[0]),
-	.clk(BTN[1]),
-	.q(q)
+	.clk(BTN[2]),
+	.W(LED[5:0])
 );
-
-student_num sn1(
-	.a(q),
-	.num(LED[3:0]) //輸出
-);
-
 
 //*******************************//
 

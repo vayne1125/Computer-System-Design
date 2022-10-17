@@ -1,5 +1,5 @@
 Analysis & Elaboration report for mcu
-Tue Oct 04 23:44:36 2022
+Mon Oct 17 20:49:45 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -10,8 +10,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Analysis & Elaboration Settings
-  5. Port Connectivity Checks: "counter_BCD_min:counter_BCD_min1|counter_4bit_0_9:counter_4bit_0_9_1"
-  6. Analysis & Elaboration Messages
+  5. Analysis & Elaboration Messages
 
 
 
@@ -37,10 +36,10 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                  ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Tue Oct 04 23:44:36 2022      ;
+; Analysis & Elaboration Status      ; Successful - Mon Oct 17 20:49:45 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; mcu                                        ;
-; Top-level Entity Name              ; clock                                      ;
+; Top-level Entity Name              ; mcu                                        ;
 ; Family                             ; Cyclone III                                ;
 ; Total logic elements               ; N/A until Partition Merge                  ;
 ;     Total combinational functions  ; N/A until Partition Merge                  ;
@@ -54,21 +53,15 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -77,7 +70,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP3C16F484C6       ;                    ;
-; Top-level entity name                                                      ; clock              ; mcu                ;
+; Top-level entity name                                                      ; mcu                ; mcu                ;
 ; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -158,77 +151,36 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "counter_BCD_min:counter_BCD_min1|counter_4bit_0_9:counter_4bit_0_9_1"                                                                                                                     ;
-+--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port         ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; carry_in     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; carry_in[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-+--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Elaboration
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Oct 04 23:44:35 2022
+    Info: Processing started: Mon Oct 17 20:49:44 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mcu -c mcu --analysis_and_elaboration
-Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
-Info (12021): Found 1 design units, including 1 entities, in source file design/ryg_light.sv
-    Info (12023): Found entity 1: RYG_light
-Info (12021): Found 1 design units, including 1 entities, in source file design/seven_segment.sv
-    Info (12023): Found entity 1: seven_segment
-Info (12021): Found 1 design units, including 1 entities, in source file design/alu_seven_segment.sv
-    Info (12023): Found entity 1: ALU_seven_segment
-Info (12021): Found 1 design units, including 1 entities, in source file design/counter_bcd.sv
-    Info (12023): Found entity 1: counter_BCD
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file design/t_1017_1.sv
+    Info (12023): Found entity 1: t_1017_1
+Info (12021): Found 1 design units, including 1 entities, in source file design/t_1017_2.sv
+    Info (12023): Found entity 1: t_1017_2
+Info (12021): Found 1 design units, including 1 entities, in source file design/t_1017_3.sv
+    Info (12023): Found entity 1: t_1017_3
 Info (12021): Found 1 design units, including 1 entities, in source file design/mcu.sv
     Info (12023): Found entity 1: mcu
-Info (12021): Found 1 design units, including 1 entities, in source file design/counter_8.sv
-    Info (12023): Found entity 1: counter_8
-Info (12021): Found 1 design units, including 1 entities, in source file design/student_num.sv
-    Info (12023): Found entity 1: student_num
-Info (12021): Found 1 design units, including 1 entities, in source file design/counter_4bit_0_9.sv
-    Info (12023): Found entity 1: counter_4bit_0_9
-Info (12021): Found 1 design units, including 1 entities, in source file design/counter_bcd_min.sv
-    Info (12023): Found entity 1: counter_BCD_min
-Info (12021): Found 1 design units, including 1 entities, in source file design/counter_4bit_0_5.sv
-    Info (12023): Found entity 1: counter_4bit_0_5
-Info (12021): Found 1 design units, including 1 entities, in source file design/counter_4bit_0_2.sv
-    Info (12023): Found entity 1: counter_4bit_0_2
-Info (12021): Found 1 design units, including 1 entities, in source file design/counter_4bit_0_9_0_3.sv
-    Info (12023): Found entity 1: counter_4bit_0_9_0_3
-Info (12021): Found 1 design units, including 1 entities, in source file design/counter_bcd_hour.sv
-    Info (12023): Found entity 1: counter_BCD_hour
-Info (12021): Found 1 design units, including 1 entities, in source file design/clock.sv
-    Info (12023): Found entity 1: clock
-Info (12021): Found 1 design units, including 1 entities, in source file design/counter_abc.sv
-    Info (12023): Found entity 1: counter_abc
-Info (12021): Found 1 design units, including 1 entities, in source file design/counter_reg.sv
-    Info (12023): Found entity 1: counter_reg
-Info (12127): Elaborating entity "clock" for the top level hierarchy
-Info (12128): Elaborating entity "counter_BCD_min" for hierarchy "counter_BCD_min:counter_BCD_min1"
-Info (12128): Elaborating entity "counter_4bit_0_9" for hierarchy "counter_BCD_min:counter_BCD_min1|counter_4bit_0_9:counter_4bit_0_9_1"
-Warning (10230): Verilog HDL assignment warning at counter_4bit_0_9.sv(17): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at counter_4bit_0_9.sv(20): truncated value with size 32 to match size of target (1)
-Info (12128): Elaborating entity "counter_4bit_0_5" for hierarchy "counter_BCD_min:counter_BCD_min1|counter_4bit_0_5:counter_4bit_0_5_1"
-Warning (10230): Verilog HDL assignment warning at counter_4bit_0_5.sv(17): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at counter_4bit_0_5.sv(20): truncated value with size 32 to match size of target (1)
-Info (12128): Elaborating entity "seven_segment" for hierarchy "counter_BCD_min:counter_BCD_min1|seven_segment:seven_segment1"
-Info (12128): Elaborating entity "counter_BCD_hour" for hierarchy "counter_BCD_hour:counter_BCD_hour1"
-Info (12128): Elaborating entity "counter_4bit_0_9_0_3" for hierarchy "counter_BCD_hour:counter_BCD_hour1|counter_4bit_0_9_0_3:counter_4bit_0_9_0_3_1"
-Warning (10230): Verilog HDL assignment warning at counter_4bit_0_9_0_3.sv(20): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at counter_4bit_0_9_0_3.sv(24): truncated value with size 32 to match size of target (1)
-Info (12128): Elaborating entity "counter_4bit_0_2" for hierarchy "counter_BCD_hour:counter_BCD_hour1|counter_4bit_0_2:counter_4bit_0_2_1"
-Warning (10230): Verilog HDL assignment warning at counter_4bit_0_2.sv(17): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at counter_4bit_0_2.sv(20): truncated value with size 32 to match size of target (1)
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4614 megabytes
-    Info: Processing ended: Tue Oct 04 23:44:36 2022
+Info (12021): Found 1 design units, including 1 entities, in source file design/hw_1017_1.sv
+    Info (12023): Found entity 1: hw_1017_1
+Info (12127): Elaborating entity "mcu" for the top level hierarchy
+Warning (10034): Output port "HEX0" at mcu.sv(12) has no driver
+Warning (10034): Output port "HEX1" at mcu.sv(13) has no driver
+Warning (10034): Output port "HEX2" at mcu.sv(14) has no driver
+Warning (10034): Output port "HEX3" at mcu.sv(15) has no driver
+Warning (10034): Output port "LED[9..6]" at mcu.sv(18) has no driver
+Info (12128): Elaborating entity "t_1017_3" for hierarchy "t_1017_3:t_1017_31"
+Warning (10230): Verilog HDL assignment warning at t_1017_3.sv(35): truncated value with size 32 to match size of target (6)
+Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4600 megabytes
+    Info: Processing ended: Mon Oct 17 20:49:45 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
