@@ -23,8 +23,6 @@
 # Top level modules:
 # 	mcu
 # 
-compile.do
-# couldn't execute ".\compile.do": no such file or directory
 do compile.do
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module testbench
@@ -32,110 +30,62 @@ do compile.do
 # Top level modules:
 # 	testbench
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module hw_1017_1
+# -- Compiling module hw_1017_2
 # 
 # Top level modules:
-# 	hw_1017_1
+# 	hw_1017_2
 do sim.do
 # vsim -voptargs=+acc work.testbench 
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.t_1017_3
+# Loading work.hw_1017_2
+# ** Warning: (vsim-3015) ../tb/testbench.sv(12): [PCDPC] - Port size (4 or 4) does not match connection size (8) for port 'W'. The port definition is at: ../../design/hw_1017_2.sv(5).
+# 
+#         Region: /testbench/hw_1017_21
 # .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
 # 
-#           Attempting to use alternate WLF file "./wlftj37mg5".
+#           Attempting to use alternate WLF file "./wlfti9ek5e".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftj37mg5
+#           Using alternate file: ./wlfti9ek5e
 # 
-# ** Error: (vish-4014) No objects found matching '/testbench/hw_1017_11/reset'.
-# Executing ONERROR command at macro ./wave.do line 13
-# ** Error: (vish-4014) No objects found matching '/testbench/hw_1017_11/clk'.
-# Executing ONERROR command at macro ./wave.do line 14
-# ** Error: (vish-4014) No objects found matching '/testbench/hw_1017_11/ps'.
-# Executing ONERROR command at macro ./wave.do line 15
-# ** Error: (vish-4014) No objects found matching '/testbench/hw_1017_11/load_A'.
-# Executing ONERROR command at macro ./wave.do line 16
-# ** Error: (vish-4014) No objects found matching '/testbench/hw_1017_11/load_B'.
-# Executing ONERROR command at macro ./wave.do line 17
-# ** Error: (vish-4014) No objects found matching '/testbench/hw_1017_11/port_A'.
-# Executing ONERROR command at macro ./wave.do line 18
-# ** Error: (vish-4014) No objects found matching '/testbench/hw_1017_11/port_B'.
-# Executing ONERROR command at macro ./wave.do line 19
 # Break in Module testbench at ../tb/testbench.sv line 19
 # Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
 # MACRO ./sim.do PAUSED at line 7
 do compile.do
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module testbench
-# ** Error: ../tb/testbench.sv(14): near ")": syntax error, unexpected ')', expecting .* or '.'
-# ** Error: C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./compile.do line 6
-# C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog ../tb/testbench.sv"
-do compile.do
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module hw_1017_1
+# -- Compiling module hw_1017_2
 # 
 # Top level modules:
-# 	hw_1017_1
+# 	hw_1017_2
 do sim.do
 # vsim -voptargs=+acc work.testbench 
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.hw_1017_1
+# Loading work.hw_1017_2
+# ** Warning: (vsim-3015) ../tb/testbench.sv(12): [PCDPC] - Port size (4 or 4) does not match connection size (8) for port 'W'. The port definition is at: ../../design/hw_1017_2.sv(5).
+# 
+#         Region: /testbench/hw_1017_21
 # .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
 # 
-#           Attempting to use alternate WLF file "./wlftyyr3wh".
+#           Attempting to use alternate WLF file "./wlftr2r9b7".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftyyr3wh
+#           Using alternate file: ./wlftr2r9b7
 # 
-# Break in Module testbench at ../tb/testbench.sv line 21
-# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
-# MACRO ./sim.do PAUSED at line 7
-compile.do
-# couldn't execute ".\compile.do": no such file or directory
-do compile.do
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module testbench
-# 
-# Top level modules:
-# 	testbench
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module hw_1017_1
-# 
-# Top level modules:
-# 	hw_1017_1
-do sim.do
-# vsim -voptargs=+acc work.testbench 
-# Loading sv_std.std
-# Loading work.testbench
-# Loading work.hw_1017_1
-# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
-# 
-#           Attempting to use alternate WLF file "./wlftv6ky6e".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftv6ky6e
-# 
-# Break in Module testbench at ../tb/testbench.sv line 21
-# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
+# Break in Module testbench at ../tb/testbench.sv line 19
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
 # MACRO ./sim.do PAUSED at line 7
 do compile.do
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -144,27 +94,30 @@ do compile.do
 # Top level modules:
 # 	testbench
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module hw_1017_1
+# -- Compiling module hw_1017_2
 # 
 # Top level modules:
-# 	hw_1017_1
+# 	hw_1017_2
 do sim.do
 # vsim -voptargs=+acc work.testbench 
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.hw_1017_1
+# Loading work.hw_1017_2
+# ** Warning: (vsim-3015) ../tb/testbench.sv(12): [PCDPC] - Port size (4 or 4) does not match connection size (8) for port 'W'. The port definition is at: ../../design/hw_1017_2.sv(5).
+# 
+#         Region: /testbench/hw_1017_21
 # .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
 # 
-#           Attempting to use alternate WLF file "./wlftf24ayk".
+#           Attempting to use alternate WLF file "./wlftvmi378".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftf24ayk
+#           Using alternate file: ./wlftvmi378
 # 
-# Break in Module testbench at ../tb/testbench.sv line 21
-# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
+# Break in Module testbench at ../tb/testbench.sv line 19
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
 # MACRO ./sim.do PAUSED at line 7
 do compile.do
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -173,27 +126,63 @@ do compile.do
 # Top level modules:
 # 	testbench
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module hw_1017_1
+# -- Compiling module hw_1017_2
 # 
 # Top level modules:
-# 	hw_1017_1
+# 	hw_1017_2
 do sim.do
 # vsim -voptargs=+acc work.testbench 
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.hw_1017_1
+# Loading work.hw_1017_2
+# ** Warning: (vsim-3015) ../tb/testbench.sv(12): [PCDPC] - Port size (4 or 4) does not match connection size (8) for port 'W'. The port definition is at: ../../design/hw_1017_2.sv(5).
+# 
+#         Region: /testbench/hw_1017_21
 # .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
 # 
-#           Attempting to use alternate WLF file "./wlftckcbjw".
+#           Attempting to use alternate WLF file "./wlftcn00bx".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftckcbjw
+#           Using alternate file: ./wlftcn00bx
 # 
-# Break in Module testbench at ../tb/testbench.sv line 21
-# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
+# Break in Module testbench at ../tb/testbench.sv line 19
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
+# MACRO ./sim.do PAUSED at line 7
+# WARNING: No extended dataflow license exists
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hw_1017_2
+# 
+# Top level modules:
+# 	hw_1017_2
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.hw_1017_2
+# ** Warning: (vsim-3015) ../tb/testbench.sv(12): [PCDPC] - Port size (4 or 4) does not match connection size (8) for port 'W'. The port definition is at: ../../design/hw_1017_2.sv(5).
+# 
+#         Region: /testbench/hw_1017_21
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
+# 
+#           Attempting to use alternate WLF file "./wlfteiz47s".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfteiz47s
+# 
+# Break in Module testbench at ../tb/testbench.sv line 19
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
 # MACRO ./sim.do PAUSED at line 7
 do compile.do
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -202,27 +191,30 @@ do compile.do
 # Top level modules:
 # 	testbench
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module hw_1017_1
+# -- Compiling module hw_1017_2
 # 
 # Top level modules:
-# 	hw_1017_1
+# 	hw_1017_2
 do sim.do
 # vsim -voptargs=+acc work.testbench 
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.hw_1017_1
+# Loading work.hw_1017_2
+# ** Warning: (vsim-3015) ../tb/testbench.sv(12): [PCDPC] - Port size (4 or 4) does not match connection size (8) for port 'W'. The port definition is at: ../../design/hw_1017_2.sv(5).
+# 
+#         Region: /testbench/hw_1017_21
 # .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
 # 
-#           Attempting to use alternate WLF file "./wlftkt4fe3".
+#           Attempting to use alternate WLF file "./wlftegnz2i".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftkt4fe3
+#           Using alternate file: ./wlftegnz2i
 # 
-# Break in Module testbench at ../tb/testbench.sv line 21
-# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
+# Break in Module testbench at ../tb/testbench.sv line 19
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
 # MACRO ./sim.do PAUSED at line 7
 do compile.do
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -231,25 +223,29 @@ do compile.do
 # Top level modules:
 # 	testbench
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module hw_1017_1
+# -- Compiling module hw_1017_2
 # 
 # Top level modules:
-# 	hw_1017_1
+# 	hw_1017_2
 do sim.do
 # vsim -voptargs=+acc work.testbench 
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.hw_1017_1
+# Loading work.hw_1017_2
+# ** Warning: (vsim-3015) ../tb/testbench.sv(12): [PCDPC] - Port size (4 or 4) does not match connection size (8) for port 'W'. The port definition is at: ../../design/hw_1017_2.sv(5).
+# 
+#         Region: /testbench/hw_1017_21
 # .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
 # 
-#           Attempting to use alternate WLF file "./wlftmkd9tx".
+#           Attempting to use alternate WLF file "./wlft53z6wt".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftmkd9tx
+#           Using alternate file: ./wlft53z6wt
 # 
-# Break in Module testbench at ../tb/testbench.sv line 21
-# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
+# Break in Module testbench at ../tb/testbench.sv line 19
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
 # MACRO ./sim.do PAUSED at line 7
+# WARNING: No extended dataflow license exists

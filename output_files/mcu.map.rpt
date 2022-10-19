@@ -1,5 +1,5 @@
 Analysis & Elaboration report for mcu
-Mon Oct 17 20:49:45 2022
+Wed Oct 19 13:42:36 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                  ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Mon Oct 17 20:49:45 2022      ;
+; Analysis & Elaboration Status      ; Successful - Wed Oct 19 13:42:36 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; mcu                                        ;
 ; Top-level Entity Name              ; mcu                                        ;
@@ -157,7 +157,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Elaboration
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Oct 17 20:49:44 2022
+    Info: Processing started: Wed Oct 19 13:42:35 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mcu -c mcu --analysis_and_elaboration
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file design/t_1017_1.sv
@@ -170,6 +170,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file design/
     Info (12023): Found entity 1: mcu
 Info (12021): Found 1 design units, including 1 entities, in source file design/hw_1017_1.sv
     Info (12023): Found entity 1: hw_1017_1
+Info (12021): Found 1 design units, including 1 entities, in source file design/hw_1017_2.sv
+    Info (12023): Found entity 1: hw_1017_2
+Warning (10236): Verilog HDL Implicit Net warning at hw_1017_2.sv(39): created implicit net for "A"
 Info (12127): Elaborating entity "mcu" for the top level hierarchy
 Warning (10034): Output port "HEX0" at mcu.sv(12) has no driver
 Warning (10034): Output port "HEX1" at mcu.sv(13) has no driver
@@ -178,9 +181,9 @@ Warning (10034): Output port "HEX3" at mcu.sv(15) has no driver
 Warning (10034): Output port "LED[9..6]" at mcu.sv(18) has no driver
 Info (12128): Elaborating entity "t_1017_3" for hierarchy "t_1017_3:t_1017_31"
 Warning (10230): Verilog HDL assignment warning at t_1017_3.sv(35): truncated value with size 32 to match size of target (6)
-Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4600 megabytes
-    Info: Processing ended: Mon Oct 17 20:49:45 2022
+Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4601 megabytes
+    Info: Processing ended: Wed Oct 19 13:42:36 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -1,5 +1,5 @@
 `timescale 1ns/10ps
-module hw_1017_1(
+module hw_1017_2(
 	input clk,                     //時脈
 	input reset,				       //reset
 	output logic [7:0] port_A,     //output
@@ -93,7 +93,7 @@ module hw_1017_1(
 			5:          
 			begin
 				ns = 6;
-			end
+			endD
 			
 			6:          
 			begin

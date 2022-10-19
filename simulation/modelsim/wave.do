@@ -10,15 +10,14 @@ quietly WaveActivateNextPane {} 0
 
 add wave -noupdate -divider {adder}
 
-add wave -noupdate -format logic	/testbench/hw_1017_11/reset
-add wave -noupdate -format logic    /testbench/hw_1017_11/clk
-add wave -noupdate -format Literal -radix Unsigned   	/testbench/hw_1017_11/ps
-add wave -noupdate -format Literal -radix Unsigned   	/testbench/hw_1017_11/S
-add wave -noupdate -format Literal -radix Unsigned   	/testbench/hw_1017_11/W
-add wave -noupdate -format logic 	/testbench/hw_1017_11/load_A
-add wave -noupdate -format Literal -radix Unsigned 	    /testbench/hw_1017_11/load_B
-add wave -noupdate -format Literal -radix Unsigned 	    /testbench/hw_1017_11/port_A
-add wave -noupdate -format Literal -radix Unsigned   	/testbench/hw_1017_11/port_B
+add wave -noupdate -format logic	/testbench/hw_1017_21/reset
+add wave -noupdate -format logic    /testbench/hw_1017_21/clk
+add wave -noupdate -format Literal -radix Unsigned   	/testbench/hw_1017_21/ps
+add wave -noupdate -format Literal -radix Unsigned   	/testbench/hw_1017_21/op
+add wave -noupdate -format Literal -radix Unsigned   	/testbench/hw_1017_21/A
+add wave -noupdate -format Literal -radix Unsigned   	/testbench/hw_1017_21/B
+add wave -noupdate -format Literal -radix Unsigned   	/testbench/hw_1017_21/S
+add wave -noupdate -format Literal -radix Unsigned   	/testbench/hw_1017_21/W
 
 #add wave -noupdate -format Literal -radix Binary 	    /testbench/counter_81/seven_seg  
 #add wave -noupdate -format Literal -radix Unsigned 	/testbench/adder1/a
