@@ -1,5 +1,5 @@
 Assembler report for mcu
-Mon Oct 17 12:11:10 2022
+Mon Oct 24 10:54:15 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Oct 17 12:11:10 2022 ;
+; Assembler Status      ; Successful - Mon Oct 24 10:54:15 2022 ;
 ; Revision Name         ; mcu                                   ;
 ; Top-level Entity Name ; mcu                                   ;
 ; Family                ; Cyclone III                           ;
@@ -92,8 +92,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                                                            ;
 +----------------+------------------------------------------------------------------------------------+
 ; Device         ; EP3C16F484C6                                                                       ;
-; JTAG usercode  ; 0x000CD0E0                                                                         ;
-; Checksum       ; 0x000CD0E0                                                                         ;
+; JTAG usercode  ; 0x000CF234                                                                         ;
+; Checksum       ; 0x000CF234                                                                         ;
 +----------------+------------------------------------------------------------------------------------+
 
 
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Oct 17 12:11:08 2022
+    Info: Processing started: Mon Oct 24 10:54:14 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off mcu -c mcu
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4571 megabytes
-    Info: Processing ended: Mon Oct 17 12:11:10 2022
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Mon Oct 24 10:54:15 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

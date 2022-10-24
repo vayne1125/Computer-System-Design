@@ -4,8 +4,8 @@
 
 # ------------------------------------------------------------
 vlog ../tb/testbench.sv
-vlog ../../design/hw_1017_2.sv
-
+vlog ../../design/CPU.sv
+vlog ../../design/ROM.sv
 
 
 

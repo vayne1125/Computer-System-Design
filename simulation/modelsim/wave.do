@@ -10,14 +10,16 @@ quietly WaveActivateNextPane {} 0
 
 add wave -noupdate -divider {adder}
 
-add wave -noupdate -format logic	/testbench/hw_1017_21/reset
-add wave -noupdate -format logic    /testbench/hw_1017_21/clk
-add wave -noupdate -format Literal -radix Unsigned   	/testbench/hw_1017_21/ps
-add wave -noupdate -format Literal -radix Unsigned   	/testbench/hw_1017_21/op
-add wave -noupdate -format Literal -radix Unsigned   	/testbench/hw_1017_21/A
-add wave -noupdate -format Literal -radix Unsigned   	/testbench/hw_1017_21/B
-add wave -noupdate -format Literal -radix Unsigned   	/testbench/hw_1017_21/S
-add wave -noupdate -format Literal -radix Unsigned   	/testbench/hw_1017_21/W
+add wave -noupdate -format logic	/testbench/CPU1/reset
+add wave -noupdate -format logic    /testbench/CPU1/clk
+add wave -noupdate -format Literal -radix Unsigned   	/testbench/CPU1/ps
+add wave -noupdate -format Literal -radix Unsigned   	/testbench/CPU1/pc_next
+add wave -noupdate -format logic   	/testbench/CPU1/load_pc
+add wave -noupdate -format Literal -radix Unsigned   	/testbench/CPU1/pc_q
+add wave -noupdate -format logic   	/testbench/CPU1/load_mar
+add wave -noupdate -format Literal -radix Unsigned   	/testbench/CPU1/mar_q
+add wave -noupdate -format logic   	/testbench/CPU1/load_IR
+add wave -noupdate -format Literal -radix Hexadecimal   	/testbench/CPU1/IR
 
 #add wave -noupdate -format Literal -radix Binary 	    /testbench/counter_81/seven_seg  
 #add wave -noupdate -format Literal -radix Unsigned 	/testbench/adder1/a
