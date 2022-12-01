@@ -2,40 +2,40 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'BTN[2]'
-Slack : -1.041
-TNS   : -19.035
+Type  : Slow 1200mV 85C Model Setup 'BTN[0]'
+Slack : -6.110
+TNS   : -159.933
 
-Type  : Slow 1200mV 85C Model Hold 'BTN[2]'
-Slack : 0.382
+Type  : Slow 1200mV 85C Model Hold 'BTN[0]'
+Slack : 0.420
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'BTN[2]'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'BTN[0]'
 Slack : -3.000
-TNS   : -35.000
+TNS   : -76.696
 
-Type  : Slow 1200mV 0C Model Setup 'BTN[2]'
-Slack : -0.833
-TNS   : -13.523
+Type  : Slow 1200mV 0C Model Setup 'BTN[0]'
+Slack : -5.364
+TNS   : -137.150
 
-Type  : Slow 1200mV 0C Model Hold 'BTN[2]'
-Slack : 0.333
+Type  : Slow 1200mV 0C Model Hold 'BTN[0]'
+Slack : 0.379
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'BTN[2]'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'BTN[0]'
 Slack : -3.000
-TNS   : -35.000
+TNS   : -76.696
 
-Type  : Fast 1200mV 0C Model Setup 'BTN[2]'
-Slack : -0.125
-TNS   : -0.614
+Type  : Fast 1200mV 0C Model Setup 'BTN[0]'
+Slack : -2.813
+TNS   : -62.211
 
-Type  : Fast 1200mV 0C Model Hold 'BTN[2]'
-Slack : 0.201
+Type  : Fast 1200mV 0C Model Hold 'BTN[0]'
+Slack : 0.221
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'BTN[2]'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'BTN[0]'
 Slack : -3.000
-TNS   : -40.037
+TNS   : -79.894
 
 ------------------------------------------------------------

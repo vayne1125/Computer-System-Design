@@ -3,12 +3,12 @@ module testbench;
 
 	logic reset;					//重置
 	logic clk;						//時脈
-	logic [14:0] IR; 	 				//輸出
+	logic [7:0] w_q; 	 				//輸出
 
-	CPU CPU1(
-		.reset(reset), //()內的變數為tb的變數，"."後面為CPU.sv的變數，將2者對應起來
+	hw_1128 hw_1128_1(
+		.reset(reset), //()內的變數為tb的變數，"."後面為hw_1128.sv的變數，將2者對應起來
 		.clk(clk),
-		.IR(IR)
+		.w_q(w_q)
 	);
 
 	always #10 clk = ~clk;
@@ -16,6 +16,6 @@ module testbench;
 	initial begin
 		reset = 1;clk = 0; //一開始先reset，將時脈歸0
 		#15 reset = 0; 
-		#1000 $stop;
+		#4000 $stop;
 	end
 endmodule

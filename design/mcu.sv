@@ -26,33 +26,24 @@ module mcu(
 );
 //*******************************//
 
-logic [3:0] H0,H1,H2,H3;
+//logic [3:0] H0,H1;
 
 // add module here
-CPU CPU1(
-	.reset(~BTN[0]),
-	.clk(BTN[2]),
-	.IR({H3,H2,H1,H0})          //將結果存入變數
+hw_1114 hw_1114_1(
+	.clk(BTN[0]),
+	.reset(~BTN[2]),
+	.w_q(LED[7:0])          //將結果存入變數
 );
 
-seven_segment s0(
-	.A(H0),  		 //輸入
-	.y(HEX0)  //輸出
-);
-
-seven_segment s1(
-	.A(H1),  		 //輸入
-	.y(HEX1)  //輸出
-);
-
-seven_segment s2(
-	.A(H2),  		 //輸入
-	.y(HEX2)  //輸出
-);
-
-seven_segment s3(
-	.A(H3),  		 //輸入
-	.y(HEX3)  //輸出
-);
+//seven_segment s0(
+//	.A(H0),  		 //輸入
+//	.y(HEX0)  //輸出
+//);
+//
+//seven_segment s1(
+//	.A(H1),  		 //輸入
+//	.y(HEX1)  //輸出
+//);
+//
 //*******************************//
 endmodule

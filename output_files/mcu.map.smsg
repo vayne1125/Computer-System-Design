@@ -1,1 +1,6 @@
 Warning (10273): Verilog HDL warning at ROM.sv(20): extended using "x" or "z"
+Warning (10268): Verilog HDL information at hw_1107.sv(70): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at hw_1107.sv(87): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at hw_1114.sv(115): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at hw_1121.sv(135): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at hw_1128.sv(159): always construct contains both blocking and non-blocking assignments

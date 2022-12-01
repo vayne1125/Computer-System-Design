@@ -3,71 +3,138 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\Chia-Yu Wang\Desktop\Computer-System-Design\simulation\modelsim
-vCPU
+vhw_1114
 Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
-Z2 I5zF8=O;?DgoE1NNBTI7zi0
-Z3 VSOS=;>Og@kdPFRdi9RCTe3
-Z4 !s105 CPU_sv_unit
+Z2 IHR4Tn<GVUKk;WZ@a1zYJl3
+Z3 VSaGj46C16:6bJRa=NH<YD1
 S1
-Z5 dC:\Users\Chia-Yu Wang\Desktop\Computer-System-Design\simulation\modelsim
-Z6 w1666581063
-Z7 8../../design/CPU.sv
-Z8 F../../design/CPU.sv
+Z4 dC:\Users\Chia-Yu Wang\Desktop\Computer-System-Design\simulation\modelsim
+Z5 w1668397967
+Z6 8C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/hw_1114.sv
+Z7 FC:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/hw_1114.sv
 L0 2
-Z9 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-o-O0
-Z10 n@c@p@u
+Z9 o-sv -work work -O0
+Z10 !s92 -sv -work work {+incdir+C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design} -O0
+Z11 !s100 IXAOcckHnoL`L2bS_]<P73
+Z12 !s105 hw_1114_sv_unit
+Z13 !s108 1669607394.644000
+Z14 !s107 C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/hw_1114.sv|
+Z15 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design|C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/hw_1114.sv|
 !i10b 1
-Z11 !s100 0`z13PCCfo>Z^29^g^kGC3
 !s85 0
-Z12 !s108 1666582133.387000
-Z13 !s107 ../../design/CPU.sv|
-Z14 !s90 -reportprogress|300|../../design/CPU.sv|
 !s101 -O0
-vROM
+vhw_1128
+R1
+Z16 I4_=T6d]2K`I>OTelWnFQY0
+Z17 VJ33?H]b5@Y`>5Hh9=kgh;3
+Z18 !s105 hw_1128_sv_unit
+S1
+R4
+Z19 w1669609177
+Z20 8../../design/hw_1128.sv
+Z21 F../../design/hw_1128.sv
+L0 2
+R8
+r1
+31
+Z22 !s90 -reportprogress|300|../../design/hw_1128.sv|
+o-O0
+Z23 !s100 ]=E^^X@7if5A=?Cl:O0BF3
+Z24 !s108 1669609181.716000
+Z25 !s107 ../../design/hw_1128.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vmcu
+R1
+Z26 IYAoI^=JNEbQR]:<;anQXQ2
+Z27 V]YjK=Qk:n2YKQ3RJ8;PoG2
+S1
+R4
+Z28 w1668398164
+Z29 8C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/mcu.sv
+Z30 FC:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/mcu.sv
+L0 6
+R8
+r1
+31
+R9
+R10
+Z31 !s100 a[N3iAgAFaiBJ0nUM:YaJ2
+Z32 !s105 mcu_sv_unit
+Z33 !s108 1669607394.526000
+Z34 !s107 C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/mcu.sv|
+Z35 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design|C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/mcu.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vProgram_Rom
+R1
+Z36 !s100 nWf;DKi3T9EP;>=o9ez3o1
+Z37 Io3WYIRGdY`UE8eQ?gj`DS1
+Z38 V[J?EiRjB;A1Y`=EzF>j9K0
+Z39 !s105 Program_Rom_sv_unit
+S1
+R4
+Z40 w1669600167
+Z41 8../../design/Program_Rom.sv
+Z42 F../../design/Program_Rom.sv
+L0 1
+R8
+r1
+31
+Z43 !s90 -reportprogress|300|../../design/Program_Rom.sv|
+o-O0
+Z44 n@program_@rom
+!i10b 1
+!s85 0
+Z45 !s108 1669609181.774000
+Z46 !s107 ../../design/Program_Rom.sv|
+!s101 -O0
+vsingle_port_ram_128x8
 R1
 !i10b 1
-!s100 iUjXbT<8BGS_zMLCMZB5Z3
-I=TcFf;2YOLHaUBPS?D9]K0
-Z15 V4h6?C4o8EOkH86`2GYCjC0
-Z16 !s105 ROM_sv_unit
+Z47 !s100 aR;09nddcNjSPDbU2RHnj2
+Z48 I9LUaXH1^CTdm=Q0[B84zC3
+Z49 V;`Nab@EJzh^cR37N@>@_d3
+Z50 !s105 single_port_ram_128x8_sv_unit
 S1
-R5
-Z17 w1666578811
-8../../design/ROM.sv
-F../../design/ROM.sv
-L0 2
-R9
+R4
+Z51 w1668395951
+Z52 8../../design/single_port_ram_128x8.sv
+Z53 F../../design/single_port_ram_128x8.sv
+L0 1
+R8
 r1
 !s85 0
 31
-!s108 1666582133.475000
-!s107 ../../design/ROM.sv|
-!s90 -reportprogress|300|../../design/ROM.sv|
+!s108 1669609181.831000
+!s107 ../../design/single_port_ram_128x8.sv|
+Z54 !s90 -reportprogress|300|../../design/single_port_ram_128x8.sv|
 !s101 -O0
 o-O0
-Z18 n@r@o@m
 vtestbench
 R1
-Z19 I]<Wl<h<llFdC?7PP4hk;I0
-Z20 VhGfW:390DM[oDMzegDH9`2
+Z55 !s100 H;^WZFRF=;S4438a1<0In2
+Z56 IQNlDH0Ji^8S<Jd]HhIfJ82
+Z57 VhGfW:390DM[oDMzegDH9`2
+Z58 !s105 testbench_sv_unit
 S1
-R5
-Z21 w1666581217
-Z22 8../tb/testbench.sv
-Z23 F../tb/testbench.sv
+R4
+Z59 w1669602806
+Z60 8../tb/testbench.sv
+Z61 F../tb/testbench.sv
 L0 2
-R9
+R8
 r1
 31
+Z62 !s90 -reportprogress|300|../tb/testbench.sv|
 o-O0
-Z24 !s100 0FkeC67bAP5oM[B@I`iZe3
-Z25 !s105 testbench_sv_unit
-Z26 !s108 1666582133.299000
-Z27 !s107 ../tb/testbench.sv|
-Z28 !s90 -reportprogress|300|../tb/testbench.sv|
+Z63 !s108 1669609181.654000
+Z64 !s107 ../tb/testbench.sv|
 !i10b 1
 !s85 0
 !s101 -O0

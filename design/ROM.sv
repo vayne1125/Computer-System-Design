@@ -9,14 +9,14 @@ module ROM(
     always_comb
         begin
             case (Rom_addr_in)
-				11'h0:	data = 14'h3044;		//MOVLW
-				11'h1:	data = 14'h3E01;		//ADDLW
-				11'h2:	data = 14'h3E02;		//ADDLW
-				11'h3:	data = 14'h3E03;		//ADDLW
-				11'h4:	data = 14'h3E04;		//ADDLW
-				11'h5:	data = 14'h3E05;		//ADDLW
-				11'h6:	data = 14'h3E06;		//ADDLW
-				11'h7:	data = 14'h3E07;		//ADDLW
+				11'h0:	data = 14'h01A5;		
+				11'h1:	data = 14'h0103;		
+				11'h2:	data = 14'h3007;		
+				11'h3:	data = 14'h07A5;		
+				11'h4:	data = 14'h0725;		
+				11'h5:	data = 14'h2805;		
+				11'h6:	data = 14'h3400;		
+				11'h7:	data = 14'h3400;		
 				default:data = 14'hX;
             endcase
         end
