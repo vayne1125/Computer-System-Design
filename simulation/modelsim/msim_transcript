@@ -16,6 +16,12 @@
 # 
 # Top level modules:
 # 	single_port_ram_128x8
+# vlog -sv -work work +incdir+C:/Users/Chia-Yu\ Wang/Desktop/Computer-System-Design/design {C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/seven_segment.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_segment
+# 
+# Top level modules:
+# 	seven_segment
 # vlog -sv -work work +incdir+C:/Users/Chia-Yu\ Wang/Desktop/Computer-System-Design/design {C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/mcu.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mcu
@@ -28,12 +34,18 @@
 # 
 # Top level modules:
 # 	Program_Rom
-# vlog -sv -work work +incdir+C:/Users/Chia-Yu\ Wang/Desktop/Computer-System-Design/design {C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/hw_1114.sv}
+# vlog -sv -work work +incdir+C:/Users/Chia-Yu\ Wang/Desktop/Computer-System-Design/design {C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/hw_1212.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module hw_1114
+# -- Compiling module hw_1212
 # 
 # Top level modules:
-# 	hw_1114
+# 	hw_1212
+# vlog -sv -work work +incdir+C:/Users/Chia-Yu\ Wang/Desktop/Computer-System-Design/design {C:/Users/Chia-Yu Wang/Desktop/Computer-System-Design/design/Stack.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
 # 
 do compile.do
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -42,10 +54,10 @@ do compile.do
 # Top level modules:
 # 	testbench
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module hw_1128
+# -- Compiling module hw_1219
 # 
 # Top level modules:
-# 	hw_1128
+# 	hw_1219
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Program_Rom
 # 
@@ -56,71 +68,28 @@ do compile.do
 # 
 # Top level modules:
 # 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
 do sim.do
 # vsim -voptargs=+acc work.testbench 
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.hw_1128
+# Loading work.hw_1219
 # Loading work.Program_Rom
+# Loading work.Stack
 # Loading work.single_port_ram_128x8
 # .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
 # 
-#           Attempting to use alternate WLF file "./wlftc36xmb".
+#           Attempting to use alternate WLF file "./wlftcfyyqs".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftc36xmb
-# 
-# Break in Module testbench at ../tb/testbench.sv line 19
-# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
-# MACRO ./sim.do PAUSED at line 7
-add wave -position end  sim:/testbench/hw_1128_1/load_w
-add wave -position end  sim:/testbench/hw_1128_1/MOVLW
-add wave -position end  sim:/testbench/hw_1128_1/BTFSC
-add wave -position end  sim:/testbench/hw_1128_1/BTFSS
-add wave -position end  sim:/testbench/hw_1128_1/BSF
-add wave -position end  sim:/testbench/hw_1128_1/BCF
-add wave -position end  sim:/testbench/hw_1128_1/MOVWF
-add wave -position end  sim:/testbench/hw_1128_1/MOVLW
-do compile.do
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module testbench
-# 
-# Top level modules:
-# 	testbench
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module hw_1128
-# 
-# Top level modules:
-# 	hw_1128
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Program_Rom
-# 
-# Top level modules:
-# 	Program_Rom
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module single_port_ram_128x8
-# 
-# Top level modules:
-# 	single_port_ram_128x8
-do sim.do
-# vsim -voptargs=+acc work.testbench 
-# Loading sv_std.std
-# Loading work.testbench
-# Loading work.hw_1128
-# Loading work.Program_Rom
-# Loading work.single_port_ram_128x8
-# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
-# 
-#           Attempting to use alternate WLF file "./wlft7x08gj".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlft7x08gj
+#           Using alternate file: ./wlftcfyyqs
 # 
 # Break in Module testbench at ../tb/testbench.sv line 19
 # Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
@@ -132,10 +101,10 @@ do compile.do
 # Top level modules:
 # 	testbench
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module hw_1128
+# -- Compiling module hw_1219
 # 
 # Top level modules:
-# 	hw_1128
+# 	hw_1219
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Program_Rom
 # 
@@ -146,109 +115,28 @@ do compile.do
 # 
 # Top level modules:
 # 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
 do sim.do
 # vsim -voptargs=+acc work.testbench 
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.hw_1128
+# Loading work.hw_1219
 # Loading work.Program_Rom
+# Loading work.Stack
 # Loading work.single_port_ram_128x8
 # .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
 # 
-#           Attempting to use alternate WLF file "./wlft1ndj7q".
+#           Attempting to use alternate WLF file "./wlft0nahjg".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft1ndj7q
-# 
-# Break in Module testbench at ../tb/testbench.sv line 19
-# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
-# MACRO ./sim.do PAUSED at line 7
-add wave -position end  sim:/testbench/hw_1128_1/btfsc_btfss_skip_bit
-add wave -position end  sim:/testbench/hw_1128_1/BTFSC
-add wave -position end  sim:/testbench/hw_1128_1/BTFSS
-do compile.do
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module testbench
-# 
-# Top level modules:
-# 	testbench
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module hw_1128
-# 
-# Top level modules:
-# 	hw_1128
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Program_Rom
-# 
-# Top level modules:
-# 	Program_Rom
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module single_port_ram_128x8
-# 
-# Top level modules:
-# 	single_port_ram_128x8
-do sim.do
-# vsim -voptargs=+acc work.testbench 
-# Loading sv_std.std
-# Loading work.testbench
-# Loading work.hw_1128
-# Loading work.Program_Rom
-# Loading work.single_port_ram_128x8
-# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
-# 
-#           Attempting to use alternate WLF file "./wlftd9jwjg".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftd9jwjg
-# 
-# Break in Module testbench at ../tb/testbench.sv line 19
-# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
-# MACRO ./sim.do PAUSED at line 7
-add wave -position end  sim:/testbench/hw_1128_1/BTFSC
-add wave -position end  sim:/testbench/hw_1128_1/BTFSS
-do compile.do
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module testbench
-# 
-# Top level modules:
-# 	testbench
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module hw_1128
-# 
-# Top level modules:
-# 	hw_1128
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Program_Rom
-# 
-# Top level modules:
-# 	Program_Rom
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module single_port_ram_128x8
-# 
-# Top level modules:
-# 	single_port_ram_128x8
-do sim.do
-# vsim -voptargs=+acc work.testbench 
-# Loading sv_std.std
-# Loading work.testbench
-# Loading work.hw_1128
-# Loading work.Program_Rom
-# Loading work.single_port_ram_128x8
-# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
-# 
-#           Attempting to use alternate WLF file "./wlftcxr2tf".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftcxr2tf
+#           Using alternate file: ./wlft0nahjg
 # 
 # Break in Module testbench at ../tb/testbench.sv line 19
 # Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
@@ -260,10 +148,10 @@ do compile.do
 # Top level modules:
 # 	testbench
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module hw_1128
+# -- Compiling module hw_1219
 # 
 # Top level modules:
-# 	hw_1128
+# 	hw_1219
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Program_Rom
 # 
@@ -274,22 +162,28 @@ do compile.do
 # 
 # Top level modules:
 # 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
 do sim.do
 # vsim -voptargs=+acc work.testbench 
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.hw_1128
+# Loading work.hw_1219
 # Loading work.Program_Rom
+# Loading work.Stack
 # Loading work.single_port_ram_128x8
 # .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
 # 
-#           Attempting to use alternate WLF file "./wlftbahbwc".
+#           Attempting to use alternate WLF file "./wlfthg2z17".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftbahbwc
+#           Using alternate file: ./wlfthg2z17
 # 
 # Break in Module testbench at ../tb/testbench.sv line 19
 # Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
@@ -301,10 +195,10 @@ do compile.do
 # Top level modules:
 # 	testbench
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module hw_1128
+# -- Compiling module hw_1219
 # 
 # Top level modules:
-# 	hw_1128
+# 	hw_1219
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Program_Rom
 # 
@@ -315,24 +209,28 @@ do compile.do
 # 
 # Top level modules:
 # 	single_port_ram_128x8
-so sim.do
-# ambiguous command name "so": socket source
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
 do sim.do
 # vsim -voptargs=+acc work.testbench 
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.hw_1128
+# Loading work.hw_1219
 # Loading work.Program_Rom
+# Loading work.Stack
 # Loading work.single_port_ram_128x8
 # .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
 # 
-#           Attempting to use alternate WLF file "./wlftv0xemn".
+#           Attempting to use alternate WLF file "./wlft2thnsa".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftv0xemn
+#           Using alternate file: ./wlft2thnsa
 # 
 # Break in Module testbench at ../tb/testbench.sv line 19
 # Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
@@ -344,10 +242,10 @@ do compile.do
 # Top level modules:
 # 	testbench
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module hw_1128
+# -- Compiling module hw_1219
 # 
 # Top level modules:
-# 	hw_1128
+# 	hw_1219
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Program_Rom
 # 
@@ -358,34 +256,32 @@ do compile.do
 # 
 # Top level modules:
 # 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
 do sim.do
 # vsim -voptargs=+acc work.testbench 
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.hw_1128
+# Loading work.hw_1219
 # Loading work.Program_Rom
+# Loading work.Stack
 # Loading work.single_port_ram_128x8
 # .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
 # 
-#           Attempting to use alternate WLF file "./wlftmzztne".
+#           Attempting to use alternate WLF file "./wlft1efhb8".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftmzztne
+#           Using alternate file: ./wlft1efhb8
 # 
 # Break in Module testbench at ../tb/testbench.sv line 19
 # Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
 # MACRO ./sim.do PAUSED at line 7
-add wave -position end  sim:/testbench/hw_1128_1/INCFSZ
-add wave -position end  sim:/testbench/hw_1128_1/DECFSZ
-add wave -position end  sim:/testbench/hw_1128_1/MOVLW
-add wave -position end  sim:/testbench/hw_1128_1/btfsc_btfss_skip_bit
-add wave -position end  sim:/testbench/hw_1128_1/btfss_skip_bit
-add wave -position end  sim:/testbench/hw_1128_1/load_w
-add wave -position end  sim:/testbench/hw_1128_1/BTFSC
-add wave -position end  sim:/testbench/hw_1128_1/BTFSS
 do compile.do
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module testbench
@@ -393,10 +289,10 @@ do compile.do
 # Top level modules:
 # 	testbench
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module hw_1128
+# -- Compiling module hw_1219
 # 
 # Top level modules:
-# 	hw_1128
+# 	hw_1219
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Program_Rom
 # 
@@ -407,22 +303,357 @@ do compile.do
 # 
 # Top level modules:
 # 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
 do sim.do
 # vsim -voptargs=+acc work.testbench 
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.hw_1128
+# Loading work.hw_1219
 # Loading work.Program_Rom
+# Loading work.Stack
 # Loading work.single_port_ram_128x8
 # .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
 # 
-#           Attempting to use alternate WLF file "./wlft0aa3qz".
+#           Attempting to use alternate WLF file "./wlftaykb4y".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft0aa3qz
+#           Using alternate file: ./wlftaykb4y
+# 
+# Break in Module testbench at ../tb/testbench.sv line 19
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hw_1219
+# 
+# Top level modules:
+# 	hw_1219
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.hw_1219
+# Loading work.Program_Rom
+# Loading work.Stack
+# Loading work.single_port_ram_128x8
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
+# 
+#           Attempting to use alternate WLF file "./wlftacyvgy".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftacyvgy
+# 
+# Break in Module testbench at ../tb/testbench.sv line 19
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hw_1219
+# 
+# Top level modules:
+# 	hw_1219
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.hw_1219
+# Loading work.Program_Rom
+# Loading work.Stack
+# Loading work.single_port_ram_128x8
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
+# 
+#           Attempting to use alternate WLF file "./wlft6knbg5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft6knbg5
+# 
+# Break in Module testbench at ../tb/testbench.sv line 19
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hw_1219
+# 
+# Top level modules:
+# 	hw_1219
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.hw_1219
+# Loading work.Program_Rom
+# Loading work.Stack
+# Loading work.single_port_ram_128x8
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
+# 
+#           Attempting to use alternate WLF file "./wlft9ribeg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft9ribeg
+# 
+# Break in Module testbench at ../tb/testbench.sv line 19
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hw_1219
+# 
+# Top level modules:
+# 	hw_1219
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.hw_1219
+# Loading work.Program_Rom
+# Loading work.Stack
+# Loading work.single_port_ram_128x8
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
+# 
+#           Attempting to use alternate WLF file "./wlftiezysk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftiezysk
+# 
+# Break in Module testbench at ../tb/testbench.sv line 19
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hw_1219
+# 
+# Top level modules:
+# 	hw_1219
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.hw_1219
+# Loading work.Program_Rom
+# Loading work.Stack
+# Loading work.single_port_ram_128x8
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
+# 
+#           Attempting to use alternate WLF file "./wlftex3z1a".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftex3z1a
+# 
+# Break in Module testbench at ../tb/testbench.sv line 19
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hw_1219
+# 
+# Top level modules:
+# 	hw_1219
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.hw_1219
+# Loading work.Program_Rom
+# Loading work.Stack
+# Loading work.single_port_ram_128x8
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
+# 
+#           Attempting to use alternate WLF file "./wlftn39ayg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftn39ayg
+# 
+# Break in Module testbench at ../tb/testbench.sv line 19
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hw_1219
+# 
+# Top level modules:
+# 	hw_1219
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.hw_1219
+# Loading work.Program_Rom
+# Loading work.Stack
+# Loading work.single_port_ram_128x8
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Chia-Yu Wang  Hostname: LAPTOP-4F0TTCA6  ProcessID: 13328
+# 
+#           Attempting to use alternate WLF file "./wlftyi4wws".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftyi4wws
 # 
 # Break in Module testbench at ../tb/testbench.sv line 19
 # Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 19

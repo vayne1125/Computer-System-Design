@@ -128,8 +128,8 @@ module hw_1128(
 	
 	assign ADDWF = (ir_q[13:8] == 6'b000111);
 	assign ANDWF = (ir_q[13:8] == 6'b000101);
-	assign CLRF  = (ir_q[13:8] == 6'b000001);
-	assign CLRW  = (ir_q[13:8] == 6'b000001);
+	assign CLRF  = (ir_q[13:7] == 7'b0000011);
+	assign CLRW  = (ir_q[13:2] == 12'b000001000000);
 	assign COMF  = (ir_q[13:8] == 6'b001001);
 	assign DECF  = (ir_q[13:8] == 6'b000011);	
 	assign GOTO  = (ir_q[13:11] == 3'b101);
@@ -137,7 +137,7 @@ module hw_1128(
 	assign INCF  = (ir_q[13:8] == 6'b001010);
 	assign IORWF = (ir_q[13:8] == 6'b000100);
 	assign MOVF  = (ir_q[13:8] == 6'b001000);
-	assign MOVWF = (ir_q[13:8] == 6'b000000);
+	assign MOVWF = (ir_q[13:7] == 7'b0000001);
 	assign SUBWF = (ir_q[13:8] == 6'b000010);
 	assign XORWF = (ir_q[13:8] == 6'b000110);
 	
@@ -257,7 +257,9 @@ module hw_1128(
 				else if(INCFSZ) op = 6;
  				else op = 10;
 	
-				if(GOTO)
+				if(MOVLW || ADDLW || SUBLW || ANDLW || IORLW || XORLW)
+					load_w = 1;
+				else if(GOTO)
 					begin
 						sel_pc = 1;
 						load_pc = 1;
@@ -299,8 +301,6 @@ module hw_1128(
 						
 						if(aluout_zero) load_pc = 1;
 					end
-				else 
-					load_w = 1;	
 						
 				ns = T5;
 			end

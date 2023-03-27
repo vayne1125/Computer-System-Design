@@ -1,5 +1,5 @@
 
-State Machine - |mcu|hw_1114:hw_1114_1|ps
+State Machine - |mcu|hw_1212:hw_1212_1|ps
 Name ps.T6 ps.T5 ps.T4 ps.T3 ps.T2 ps.T1 ps.000 
 ps.000 0 0 0 0 0 0 0 
 ps.T1 0 0 0 0 0 1 1 

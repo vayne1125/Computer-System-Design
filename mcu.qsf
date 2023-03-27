@@ -118,9 +118,13 @@ set_global_assignment -name SYSTEMVERILOG_FILE design/CPU.sv
 set_global_assignment -name SYSTEMVERILOG_FILE design/Program_Rom.sv
 set_global_assignment -name SYSTEMVERILOG_FILE design/hw_1107.sv
 set_global_assignment -name SYSTEMVERILOG_FILE design/hw_1114.sv
+set_global_assignment -name SYSTEMVERILOG_FILE design/hw_1121.sv
+set_global_assignment -name SYSTEMVERILOG_FILE design/hw_1128.sv
+set_global_assignment -name SYSTEMVERILOG_FILE design/hw_1205.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name SYSTEMVERILOG_FILE design/hw_1121.sv
-set_global_assignment -name SYSTEMVERILOG_FILE design/hw_1128.sv
+set_global_assignment -name SYSTEMVERILOG_FILE design/hw_1212.sv
+set_global_assignment -name SYSTEMVERILOG_FILE design/Stack.sv
+set_global_assignment -name SYSTEMVERILOG_FILE design/hw_1219.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

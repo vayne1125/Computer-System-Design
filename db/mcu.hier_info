@@ -1,19 +1,19 @@
 |mcu
-CLK => ~NO_FANOUT~
-HEX0[0] << <GND>
-HEX0[1] << <GND>
-HEX0[2] << <GND>
-HEX0[3] << <GND>
-HEX0[4] << <GND>
-HEX0[5] << <GND>
-HEX0[6] << <GND>
-HEX1[0] << <GND>
-HEX1[1] << <GND>
-HEX1[2] << <GND>
-HEX1[3] << <GND>
-HEX1[4] << <GND>
-HEX1[5] << <GND>
-HEX1[6] << <GND>
+CLK => CLK.IN1
+HEX0[0] << seven_segment:s0.y
+HEX0[1] << seven_segment:s0.y
+HEX0[2] << seven_segment:s0.y
+HEX0[3] << seven_segment:s0.y
+HEX0[4] << seven_segment:s0.y
+HEX0[5] << seven_segment:s0.y
+HEX0[6] << seven_segment:s0.y
+HEX1[0] << seven_segment:s1.y
+HEX1[1] << seven_segment:s1.y
+HEX1[2] << seven_segment:s1.y
+HEX1[3] << seven_segment:s1.y
+HEX1[4] << seven_segment:s1.y
+HEX1[5] << seven_segment:s1.y
+HEX1[6] << seven_segment:s1.y
 HEX2[0] << <GND>
 HEX2[1] << <GND>
 HEX2[2] << <GND>
@@ -28,14 +28,14 @@ HEX3[3] << <GND>
 HEX3[4] << <GND>
 HEX3[5] << <GND>
 HEX3[6] << <GND>
-LED[0] << hw_1114:hw_1114_1.w_q
-LED[1] << hw_1114:hw_1114_1.w_q
-LED[2] << hw_1114:hw_1114_1.w_q
-LED[3] << hw_1114:hw_1114_1.w_q
-LED[4] << hw_1114:hw_1114_1.w_q
-LED[5] << hw_1114:hw_1114_1.w_q
-LED[6] << hw_1114:hw_1114_1.w_q
-LED[7] << hw_1114:hw_1114_1.w_q
+LED[0] << <GND>
+LED[1] << <GND>
+LED[2] << <GND>
+LED[3] << <GND>
+LED[4] << <GND>
+LED[5] << <GND>
+LED[6] << <GND>
+LED[7] << <GND>
 LED[8] << <GND>
 LED[9] << <GND>
 SW[0] => ~NO_FANOUT~
@@ -48,56 +48,14 @@ SW[6] => ~NO_FANOUT~
 SW[7] => ~NO_FANOUT~
 SW[8] => ~NO_FANOUT~
 SW[9] => ~NO_FANOUT~
-BTN[0] => BTN[0].IN1
+BTN[0] => ~NO_FANOUT~
 BTN[1] => ~NO_FANOUT~
 BTN[2] => _.IN1
 
 
-|mcu|hw_1114:hw_1114_1
-clk => clk.IN1
-reset => pc_q.OUTPUTSELECT
-reset => pc_q.OUTPUTSELECT
-reset => pc_q.OUTPUTSELECT
-reset => pc_q.OUTPUTSELECT
-reset => pc_q.OUTPUTSELECT
-reset => pc_q.OUTPUTSELECT
-reset => pc_q.OUTPUTSELECT
-reset => pc_q.OUTPUTSELECT
-reset => pc_q.OUTPUTSELECT
-reset => pc_q.OUTPUTSELECT
-reset => pc_q.OUTPUTSELECT
-reset => w_q.OUTPUTSELECT
-reset => w_q.OUTPUTSELECT
-reset => w_q.OUTPUTSELECT
-reset => w_q.OUTPUTSELECT
-reset => w_q.OUTPUTSELECT
-reset => w_q.OUTPUTSELECT
-reset => w_q.OUTPUTSELECT
-reset => w_q.OUTPUTSELECT
-reset => op.0000.OUTPUTSELECT
-reset => op.0001.OUTPUTSELECT
-reset => op.0010.OUTPUTSELECT
-reset => op.0011.OUTPUTSELECT
-reset => op.0100.OUTPUTSELECT
-reset => op.0101.OUTPUTSELECT
-reset => op.0111.OUTPUTSELECT
-reset => op.1000.OUTPUTSELECT
-reset => op.1001.OUTPUTSELECT
-reset => alu_q.OUTPUTSELECT
-reset => alu_q.OUTPUTSELECT
-reset => alu_q.OUTPUTSELECT
-reset => alu_q.OUTPUTSELECT
-reset => alu_q.OUTPUTSELECT
-reset => alu_q.OUTPUTSELECT
-reset => alu_q.OUTPUTSELECT
-reset => alu_q.OUTPUTSELECT
-reset => ps.OUTPUTSELECT
-reset => ps.OUTPUTSELECT
-reset => ps.OUTPUTSELECT
-reset => ps.OUTPUTSELECT
-reset => ps.OUTPUTSELECT
-reset => ps.OUTPUTSELECT
-reset => ps.OUTPUTSELECT
+|mcu|hw_1212:hw_1212_1
+clk => clk.IN2
+reset => reset.IN1
 w_q[0] <= w_q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 w_q[1] <= w_q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 w_q[2] <= w_q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -108,19 +66,19 @@ w_q[6] <= w_q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 w_q[7] <= w_q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|mcu|hw_1114:hw_1114_1|Program_Rom:rom
-Rom_data_out[0] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+|mcu|hw_1212:hw_1212_1|Program_Rom:rom
+Rom_data_out[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 Rom_data_out[1] <= data.DB_MAX_OUTPUT_PORT_TYPE
-Rom_data_out[2] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
-Rom_data_out[3] <= Equal14.DB_MAX_OUTPUT_PORT_TYPE
+Rom_data_out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Rom_data_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
 Rom_data_out[4] <= <GND>
-Rom_data_out[5] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Rom_data_out[5] <= <GND>
 Rom_data_out[6] <= <GND>
-Rom_data_out[7] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-Rom_data_out[8] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-Rom_data_out[9] <= data.DB_MAX_OUTPUT_PORT_TYPE
-Rom_data_out[10] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-Rom_data_out[11] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Rom_data_out[7] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Rom_data_out[8] <= <GND>
+Rom_data_out[9] <= <GND>
+Rom_data_out[10] <= data.DB_MAX_OUTPUT_PORT_TYPE
+Rom_data_out[11] <= Equal16.DB_MAX_OUTPUT_PORT_TYPE
 Rom_data_out[12] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 Rom_data_out[13] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 Rom_addr_in[0] => Equal0.IN21
@@ -140,6 +98,8 @@ Rom_addr_in[0] => Equal13.IN21
 Rom_addr_in[0] => Equal14.IN21
 Rom_addr_in[0] => Equal15.IN21
 Rom_addr_in[0] => Equal16.IN21
+Rom_addr_in[0] => Equal17.IN21
+Rom_addr_in[0] => Equal18.IN21
 Rom_addr_in[1] => Equal0.IN20
 Rom_addr_in[1] => Equal1.IN20
 Rom_addr_in[1] => Equal2.IN20
@@ -157,6 +117,8 @@ Rom_addr_in[1] => Equal13.IN20
 Rom_addr_in[1] => Equal14.IN20
 Rom_addr_in[1] => Equal15.IN20
 Rom_addr_in[1] => Equal16.IN20
+Rom_addr_in[1] => Equal17.IN20
+Rom_addr_in[1] => Equal18.IN20
 Rom_addr_in[2] => Equal0.IN19
 Rom_addr_in[2] => Equal1.IN19
 Rom_addr_in[2] => Equal2.IN19
@@ -174,6 +136,8 @@ Rom_addr_in[2] => Equal13.IN19
 Rom_addr_in[2] => Equal14.IN19
 Rom_addr_in[2] => Equal15.IN19
 Rom_addr_in[2] => Equal16.IN19
+Rom_addr_in[2] => Equal17.IN19
+Rom_addr_in[2] => Equal18.IN19
 Rom_addr_in[3] => Equal0.IN18
 Rom_addr_in[3] => Equal1.IN18
 Rom_addr_in[3] => Equal2.IN18
@@ -191,6 +155,8 @@ Rom_addr_in[3] => Equal13.IN18
 Rom_addr_in[3] => Equal14.IN18
 Rom_addr_in[3] => Equal15.IN18
 Rom_addr_in[3] => Equal16.IN18
+Rom_addr_in[3] => Equal17.IN18
+Rom_addr_in[3] => Equal18.IN18
 Rom_addr_in[4] => Equal0.IN17
 Rom_addr_in[4] => Equal1.IN17
 Rom_addr_in[4] => Equal2.IN17
@@ -208,6 +174,8 @@ Rom_addr_in[4] => Equal13.IN17
 Rom_addr_in[4] => Equal14.IN17
 Rom_addr_in[4] => Equal15.IN17
 Rom_addr_in[4] => Equal16.IN17
+Rom_addr_in[4] => Equal17.IN17
+Rom_addr_in[4] => Equal18.IN17
 Rom_addr_in[5] => Equal0.IN16
 Rom_addr_in[5] => Equal1.IN16
 Rom_addr_in[5] => Equal2.IN16
@@ -225,6 +193,8 @@ Rom_addr_in[5] => Equal13.IN16
 Rom_addr_in[5] => Equal14.IN16
 Rom_addr_in[5] => Equal15.IN16
 Rom_addr_in[5] => Equal16.IN16
+Rom_addr_in[5] => Equal17.IN16
+Rom_addr_in[5] => Equal18.IN16
 Rom_addr_in[6] => Equal0.IN15
 Rom_addr_in[6] => Equal1.IN15
 Rom_addr_in[6] => Equal2.IN15
@@ -242,6 +212,8 @@ Rom_addr_in[6] => Equal13.IN15
 Rom_addr_in[6] => Equal14.IN15
 Rom_addr_in[6] => Equal15.IN15
 Rom_addr_in[6] => Equal16.IN15
+Rom_addr_in[6] => Equal17.IN15
+Rom_addr_in[6] => Equal18.IN15
 Rom_addr_in[7] => Equal0.IN14
 Rom_addr_in[7] => Equal1.IN14
 Rom_addr_in[7] => Equal2.IN14
@@ -259,6 +231,8 @@ Rom_addr_in[7] => Equal13.IN14
 Rom_addr_in[7] => Equal14.IN14
 Rom_addr_in[7] => Equal15.IN14
 Rom_addr_in[7] => Equal16.IN14
+Rom_addr_in[7] => Equal17.IN14
+Rom_addr_in[7] => Equal18.IN14
 Rom_addr_in[8] => Equal0.IN13
 Rom_addr_in[8] => Equal1.IN13
 Rom_addr_in[8] => Equal2.IN13
@@ -276,6 +250,8 @@ Rom_addr_in[8] => Equal13.IN13
 Rom_addr_in[8] => Equal14.IN13
 Rom_addr_in[8] => Equal15.IN13
 Rom_addr_in[8] => Equal16.IN13
+Rom_addr_in[8] => Equal17.IN13
+Rom_addr_in[8] => Equal18.IN13
 Rom_addr_in[9] => Equal0.IN12
 Rom_addr_in[9] => Equal1.IN12
 Rom_addr_in[9] => Equal2.IN12
@@ -293,6 +269,8 @@ Rom_addr_in[9] => Equal13.IN12
 Rom_addr_in[9] => Equal14.IN12
 Rom_addr_in[9] => Equal15.IN12
 Rom_addr_in[9] => Equal16.IN12
+Rom_addr_in[9] => Equal17.IN12
+Rom_addr_in[9] => Equal18.IN12
 Rom_addr_in[10] => Equal0.IN11
 Rom_addr_in[10] => Equal1.IN11
 Rom_addr_in[10] => Equal2.IN11
@@ -310,9 +288,82 @@ Rom_addr_in[10] => Equal13.IN11
 Rom_addr_in[10] => Equal14.IN11
 Rom_addr_in[10] => Equal15.IN11
 Rom_addr_in[10] => Equal16.IN11
+Rom_addr_in[10] => Equal17.IN11
+Rom_addr_in[10] => Equal18.IN11
 
 
-|mcu|hw_1114:hw_1114_1|single_port_ram_128x8:ram
+|mcu|hw_1212:hw_1212_1|Stack:stack
+stack_out[0] <= stack.DATAOUT
+stack_out[1] <= stack.DATAOUT1
+stack_out[2] <= stack.DATAOUT2
+stack_out[3] <= stack.DATAOUT3
+stack_out[4] <= stack.DATAOUT4
+stack_out[5] <= stack.DATAOUT5
+stack_out[6] <= stack.DATAOUT6
+stack_out[7] <= stack.DATAOUT7
+stack_out[8] <= stack.DATAOUT8
+stack_out[9] <= stack.DATAOUT9
+stack_out[10] <= stack.DATAOUT10
+stack_in[0] => stack.data_a[0].DATAIN
+stack_in[0] => stack.DATAIN
+stack_in[1] => stack.data_a[1].DATAIN
+stack_in[1] => stack.DATAIN1
+stack_in[2] => stack.data_a[2].DATAIN
+stack_in[2] => stack.DATAIN2
+stack_in[3] => stack.data_a[3].DATAIN
+stack_in[3] => stack.DATAIN3
+stack_in[4] => stack.data_a[4].DATAIN
+stack_in[4] => stack.DATAIN4
+stack_in[5] => stack.data_a[5].DATAIN
+stack_in[5] => stack.DATAIN5
+stack_in[6] => stack.data_a[6].DATAIN
+stack_in[6] => stack.DATAIN6
+stack_in[7] => stack.data_a[7].DATAIN
+stack_in[7] => stack.DATAIN7
+stack_in[8] => stack.data_a[8].DATAIN
+stack_in[8] => stack.DATAIN8
+stack_in[9] => stack.data_a[9].DATAIN
+stack_in[9] => stack.DATAIN9
+stack_in[10] => stack.data_a[10].DATAIN
+stack_in[10] => stack.DATAIN10
+push => stk_ptr.OUTPUTSELECT
+push => stk_ptr.OUTPUTSELECT
+push => stk_ptr.OUTPUTSELECT
+push => stk_ptr.OUTPUTSELECT
+push => stack.DATAA
+pop => stk_ptr.OUTPUTSELECT
+pop => stk_ptr.OUTPUTSELECT
+pop => stk_ptr.OUTPUTSELECT
+pop => stk_ptr.OUTPUTSELECT
+reset => stk_ptr.OUTPUTSELECT
+reset => stk_ptr.OUTPUTSELECT
+reset => stk_ptr.OUTPUTSELECT
+reset => stk_ptr.OUTPUTSELECT
+reset => stack.OUTPUTSELECT
+clk => stack.we_a.CLK
+clk => stack.waddr_a[3].CLK
+clk => stack.waddr_a[2].CLK
+clk => stack.waddr_a[1].CLK
+clk => stack.waddr_a[0].CLK
+clk => stack.data_a[10].CLK
+clk => stack.data_a[9].CLK
+clk => stack.data_a[8].CLK
+clk => stack.data_a[7].CLK
+clk => stack.data_a[6].CLK
+clk => stack.data_a[5].CLK
+clk => stack.data_a[4].CLK
+clk => stack.data_a[3].CLK
+clk => stack.data_a[2].CLK
+clk => stack.data_a[1].CLK
+clk => stack.data_a[0].CLK
+clk => stk_ptr[0].CLK
+clk => stk_ptr[1].CLK
+clk => stk_ptr[2].CLK
+clk => stk_ptr[3].CLK
+clk => stack.CLK0
+
+
+|mcu|hw_1212:hw_1212_1|single_port_ram_128x8:ram
 data[0] => ram.data_a[0].DATAIN
 data[0] => ram.DATAIN
 data[1] => ram.data_a[1].DATAIN
@@ -377,5 +428,33 @@ q[4] <= ram.DATAOUT4
 q[5] <= ram.DATAOUT5
 q[6] <= ram.DATAOUT6
 q[7] <= ram.DATAOUT7
+
+
+|mcu|seven_segment:s0
+A[0] => Decoder0.IN3
+A[1] => Decoder0.IN2
+A[2] => Decoder0.IN1
+A[3] => Decoder0.IN0
+y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mcu|seven_segment:s1
+A[0] => Decoder0.IN3
+A[1] => Decoder0.IN2
+A[2] => Decoder0.IN1
+A[3] => Decoder0.IN0
+y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 

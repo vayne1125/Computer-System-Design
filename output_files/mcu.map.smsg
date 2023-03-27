@@ -4,3 +4,6 @@ Warning (10268): Verilog HDL information at hw_1107.sv(87): always construct con
 Warning (10268): Verilog HDL information at hw_1114.sv(115): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at hw_1121.sv(135): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at hw_1128.sv(159): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at hw_1205.sv(174): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at hw_1212.sv(197): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at hw_1219.sv(199): always construct contains both blocking and non-blocking assignments

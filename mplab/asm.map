@@ -1,34 +1,38 @@
 MPLINK 4.49, Linker
-Linker Map File - Created Mon Nov 28 09:34:56 2022
+Linker Map File - Created Thu Dec 15 16:20:33 2022
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
-                   .org_0       code   0x000000    program   0x00001e
-                   .cinit    romdata   0x00000f    program   0x000004
+                   .org_0       code   0x000000    program   0x000022
+                   .cinit    romdata   0x000011    program   0x000004
 
 
 
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x000010      
-            17 out of 2311 program addresses used, program memory utilization is 0%
+                            0x000000    0x000012      
+            19 out of 2311 program addresses used, program memory utilization is 0%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-             _.org_0_000E   0x00000e    program     static C:\Users\Chia-Yu Wang\Desktop\Computer-System-Design\mplab\hw_1128.asm
-                     loop   0x000004    program     static C:\Users\Chia-Yu Wang\Desktop\Computer-System-Design\mplab\hw_1128.asm
+                   addmin   0x00000e    program     static C:\Users\Chia-Yu Wang\Desktop\Computer-System-Design\mplab\hw_1212_2.asm
+                  loopMin   0x000004    program     static C:\Users\Chia-Yu Wang\Desktop\Computer-System-Design\mplab\hw_1212_2.asm
+                  loopSec   0x000007    program     static C:\Users\Chia-Yu Wang\Desktop\Computer-System-Design\mplab\hw_1212_2.asm
+                    start   0x000000    program     static C:\Users\Chia-Yu Wang\Desktop\Computer-System-Design\mplab\hw_1212_2.asm
 
 
 
                               Symbols - Sorted by Address
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                     loop   0x000004    program     static C:\Users\Chia-Yu Wang\Desktop\Computer-System-Design\mplab\hw_1128.asm
-             _.org_0_000E   0x00000e    program     static C:\Users\Chia-Yu Wang\Desktop\Computer-System-Design\mplab\hw_1128.asm
+                    start   0x000000    program     static C:\Users\Chia-Yu Wang\Desktop\Computer-System-Design\mplab\hw_1212_2.asm
+                  loopMin   0x000004    program     static C:\Users\Chia-Yu Wang\Desktop\Computer-System-Design\mplab\hw_1212_2.asm
+                  loopSec   0x000007    program     static C:\Users\Chia-Yu Wang\Desktop\Computer-System-Design\mplab\hw_1212_2.asm
+                   addmin   0x00000e    program     static C:\Users\Chia-Yu Wang\Desktop\Computer-System-Design\mplab\hw_1212_2.asm
 
 
